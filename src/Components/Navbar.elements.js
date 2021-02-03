@@ -12,7 +12,7 @@ align-items: center;
 font-size: 1.2rem;
 position: sticky;
 top: 0;
-z-index: 999;
+z-index: 998;
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -21,6 +21,8 @@ justify-content: space-between;
 height: 80px;
 padding: 0;
 margin: 0;
+
+
 
 
 ${Container}
@@ -72,6 +74,7 @@ export const NavMenu = styled.ul`
         align-items: center;
         list-style: none;
         text-align: center;
+        
 
 @media screen and (max-width: 960px){
 display:flex;
@@ -91,6 +94,7 @@ background: #000000;
 export const NavItem = styled.li`
 height: 80px;
 border-bottom: 2px solid transparent;
+
 
 
 
@@ -149,3 +153,8 @@ width: 100%;
 border: none;
 outline: none;
 `;
+
+
+
+
+

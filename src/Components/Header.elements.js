@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import {Button, Container} from '../GlobalStyle';
 import './HeaderElements.css';
 import bottomCircle from '../Images/bottomLeftCircle.jpg';
-
+import LeftToTitle from '../Images/leftToTitle.jpg';
+import RightToTitle from '../Images/rightToTitle.jpg';
+import LeftCenter from '../Images/leftCenter.jpg';
+import RightCenter from '../Images/rightCenter.jpg';
+import TopRight from '../Images/topRightCircle.jpg';
 
 
 export const Head = styled.div`
@@ -29,6 +33,7 @@ color : white;
 font-size: 200px;
 font-family: Duera;
 max-height: 185px;
+z-index: 1;
 
 @media screen and (max-width: 812px){
     font-size: 100px;
@@ -43,6 +48,7 @@ color : white;
 font-size: 220px;
 font-family: Duera;
 margin-bottom: 40px;
+z-index: 1;
 
 @media screen and (max-width: 812px){
     font-size: 100px;
@@ -96,3 +102,96 @@ export const BottomCircleInner = styled.div`
  left: 18%;
  z-index: 100;
 `;
+
+export const LeftToTitleImage = styled.div`
+
+background-image: url(${LeftToTitle});
+width: 180px;
+height: 250px;
+position: absolute;
+z-index: 0;
+left: 30.5%;
+top: 33%;
+
+`;
+
+export const RightToTitleImage = styled.div`
+
+background-image: url(${RightToTitle});
+position: absolute;
+width: 270px;
+height: 320px;
+z-index: 0;
+left: 60%;
+top: 60%;
+
+`;
+
+export const LeftCenterImage = styled.div`
+background-image: url(${LeftCenter});
+position: absolute;
+width: 220px;
+height: 320px;
+z-index: 0;
+left: 0;
+top: 15%;
+`;
+
+export const RightCenterImage = styled.div`
+background-image: url(${RightCenter});
+position: absolute;
+width: 120px;
+height: 270px;
+z-index: 0;
+right: 0;
+top: 25%;
+background-size: cover;
+
+`;
+
+export const TopCircle = styled.div`
+    position: absolute;
+     background-image: url(${TopRight});
+     width: 350px;
+     height: 180px;
+     top: 0;
+     left: 63%;
+     border-bottom-right-radius: 350px;
+     border-bottom-left-radius: 350px;
+     z-index: 999;
+     background-size: cover;
+    
+     
+    
+`;
+
+export const TopCircleInner = styled.div`
+ width: 230px;
+ height: 130px;
+ position: absolute;
+ border-bottom-right-radius: 350px;
+ border-bottom-left-radius: 350px;
+ background-color: #121212;
+top: 0;
+ left: 66%;
+ z-index: 999;
+`;
+
+export const TopBorder = styled.div`
+
+width: 150px;
+ height: 130px;
+ position: absolute;
+ border-bottom-right-radius: 80px;
+ border-top-right-radius: 80px;
+ background-color: #121212;
+ border: 2px solid green;
+top: 0;
+ left: 20%;
+ z-index: 999;
+ display: none;
+
+`;
+
+
+

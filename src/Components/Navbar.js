@@ -27,7 +27,7 @@ const Navbar = () => {
                                 </MobileIcon>
                                 <NavMenu onClick = {handleclick} click={click}> 
                                     <NavItem>
-                                        <NavLinks to = '/'>Exhibition</NavLinks>
+                                        <NavLinks to = '/' style={{marginLeft: '60px'}}>Exhibition</NavLinks>
                                     </NavItem>                                                      
                                     <NavItem>
                                         <NavLinks to = '/'>Events</NavLinks>
@@ -48,7 +48,6 @@ const Navbar = () => {
                                         <NavItemBtn>
                                             <NavBtnLink to="/">
                                                 <Button  big colored primary style={{fontFamily: 'duera' , fontSize: '20px'}}>BUY TICKET</Button>
-                                                
                                             </NavBtnLink>                     
                                         </NavItemBtn>
                         </NavbarContainer>
