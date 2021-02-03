@@ -10,20 +10,22 @@ const GlobalStyle = createGlobalStyle`
 }
 
 
-
 `;
 
 export const Button = styled.button`
-padding: ${({big}) => (big ? '15px 30px' : '18px 18px')};
+padding: ${({big}) => (big ? '13px 45px' : '18px 18px')};
 color: ${({primary}) => (primary ? '#fff' : '#00000')};
-background-color: ${({backgrounded}) => (backgrounded ? '#000000' : '#fff')};
+background-color: ${({backgrounded}) => (backgrounded ? '#000000' : 'transparent')};
 border: ${({colored}) => (colored ? '1px solid #606060' : '1px solid #eceef0')};
 border-radius: 5px;
 cursor: pointer;
+font-family: 'Barlow Condensed', sans-serif;
+font-weight: 600;
 
 &:hover{
         background-color: #8a66ad;
         transition: all 0.5s ease;
+        color: black;
 }
 `;
 

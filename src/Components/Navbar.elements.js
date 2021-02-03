@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import {Button, Container} from '../GlobalStyle';
 import { Link } from 'react-router-dom';
-
+import './HeaderElements.css';
 
 export const Nav = styled.nav`
-background: #000000;
+background: #121212;
 height: 80px;
 display: flex;
 justify-content: center;
@@ -31,11 +31,11 @@ color: #fff;
 justify-self: flex-start;
 cursor: pointer;
 text-decoration: none;
-font-size: 2rem;
+font-size: 3rem;
 display: flex;
 align-items: center;
-margin-left: 30px;
-font-family: 'Barlow Condensed', sans-serif;
+margin-left: 40px;
+font-family: duera;
 
 &:hover{
         color: #cc99ff;
@@ -77,7 +77,7 @@ export const NavMenu = styled.ul`
 display:flex;
 flex-direction: column;
 width: 100%;
-height: 90vh;
+height: 90.1vh;
 position: absolute;
 top: 80px;
 left: ${({click}) => (click ? 0 : '-100%')};;

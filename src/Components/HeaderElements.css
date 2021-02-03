@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'duera';
+    src: local('duera'), url(../fonts/duera.ttf) format('truetype');
+    font-weight: 900;
+  }

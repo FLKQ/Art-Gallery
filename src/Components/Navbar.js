@@ -47,7 +47,7 @@ const Navbar = () => {
                                 </NavMenu>
                                         <NavItemBtn>
                                             <NavBtnLink to="/">
-                                                <Button backgrounded big colored primary>BUY TICKET</Button>
+                                                <Button  big colored primary style={{fontFamily: 'duera' , fontSize: '20px'}}>BUY TICKET</Button>
                                                 
                                             </NavBtnLink>                     
                                         </NavItemBtn>
