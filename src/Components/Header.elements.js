@@ -9,6 +9,8 @@ import RightCenter from '../Images/rightCenter.jpg';
 import TopRight from '../Images/topRightCircle.jpg';
 
 
+
+
 export const Head = styled.div`
 font-family: 'Barlow Condensed', sans-serif;
 height: 90vh;
@@ -177,21 +179,77 @@ top: 0;
  z-index: 999;
 `;
 
-export const TopBorder = styled.div`
+export const TopBorderOuter = styled.div`
 
-width: 150px;
- height: 130px;
+width: 200px;
+ height: 200px;
  position: absolute;
- border-bottom-right-radius: 80px;
- border-top-right-radius: 80px;
  background-color: #121212;
- border: 2px solid green;
-top: 0;
+ border: 2px solid #818c57;
+ border-radius: 50%;
+top: -20px;
  left: 20%;
  z-index: 999;
- display: none;
+ 
 
 `;
+
+export const TopBorderInner = styled.div`
+
+width: 150px;
+ height: 150px;
+ position: absolute;
+ background-color: #121212;
+ border: 2px solid #818c57;
+ border-radius: 50%;
+top: 0;
+ left: 21%;
+ z-index: 999;
+ 
+
+`;
+
+
+export const TopBorderOuterBox = styled.div`
+
+width: 110px;
+ height: 200px;
+ position: absolute;
+ background-color: #121212;
+top: 0px;
+ left: 20%;
+ z-index: 999;
+ 
+
+`;
+
+export const TopBorderInnerBox = styled.div`
+
+width: 2px;
+ height: 32.7px;
+ position: absolute;
+ background-color: #121212;
+ border-right: 2px solid #818c57;
+top: 146.8px;
+ left: 25.67%;
+ z-index: 999;
+ 
+
+`;
+
+export const BottomBorder = styled.div`
+position: absolute;
+width: 100px;
+height: 165px;
+background-color: transparent;
+border: 2px solid #818c57;
+border-bottom: none;
+border-top-right-radius: 50px;
+border-top-left-radius: 50px;
+bottom: 17px;
+right: 10%;
+`;
+
 
 
 

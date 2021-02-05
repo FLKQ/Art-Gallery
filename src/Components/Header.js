@@ -1,7 +1,8 @@
 import React from 'react'
 import {Button} from '../GlobalStyle';
 import {Head, HeaderContainer, HeaderTitle, HeaderButtonHolder, HeaderButton,HeaderTitleBottom,BottomCircle, BottomCircleInner, LeftToTitleImage
-, RightToTitleImage, LeftCenterImage, RightCenterImage, TopCircle, TopCircleInner, TopBorder } from './Header.elements';
+, RightToTitleImage, LeftCenterImage, RightCenterImage, TopCircle, TopCircleInner, TopBorderOuter, TopBorderInner,TopBorderOuterBox,TopBorderInnerBox,BottomBorder } from './Header.elements';
+import Circle from './Сircle';
 
 const Header = () => {
     return (
@@ -18,7 +19,12 @@ const Header = () => {
                     <RightCenterImage/>
                     <TopCircle/>
                     <TopCircleInner/>
-                    <TopBorder/>
+                    <TopBorderOuter/>
+                    <TopBorderInner/>
+                    <TopBorderOuterBox/>
+                    <TopBorderInnerBox/>
+                    <Circle/>
+                    <BottomBorder/>
                     <HeaderButtonHolder>
                         <HeaderButton style={{fontFamily: 'duera'}}>EXHIBITIONS</HeaderButton>
                     </HeaderButtonHolder>
