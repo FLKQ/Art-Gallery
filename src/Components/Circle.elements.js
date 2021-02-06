@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const Circles = styled.div`
 position: absolute;
-left: -5%;
+left:${({lefted}) => (lefted ? "0px" : "-5%")};
 top: 60%;
 `;
 

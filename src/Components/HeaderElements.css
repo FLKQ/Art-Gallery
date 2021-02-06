@@ -3,3 +3,7 @@
     src: local('duera'), url(../fonts/duera.ttf) format('truetype');
     font-weight: 900;
   }
+
+  .lalala{
+    display: none;
+  }

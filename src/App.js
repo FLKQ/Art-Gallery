@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import GlobalStyle from './GlobalStyle';
 import Header from './Components/Header';
 import Exhibition from './Components/Exhibition';
+import Events from './Components/Events';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Navbar/>
           <Header/>
           <Exhibition/>
+          <Events/>
           <Switch>
             <Route path = "/"/>
           </Switch>

@@ -23,7 +23,7 @@ font-family: 'Barlow Condensed', sans-serif;
 font-weight: 600;
 
 &:hover{
-        background-color: #8a66ad;
+        background-color: ${({whitened}) => (whitened ? "#fff" : "#8a66ad")};
         transition: all 0.5s ease;
         color: black;
 }

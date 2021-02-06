@@ -78,10 +78,10 @@ list-style: none;
 `;
 
 export const NavigationItem = styled.li`
-margin-bottom: 10px;
+margin-bottom: 20px;
 
 @media screen and (max-width: 960px){
-        margin-right: 20px;
+        margin-right: 10px;
     
 }
 `;

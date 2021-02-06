@@ -2,6 +2,7 @@ import React from 'react'
 import {ExhibitionSection, ExhibitionContainer, NavigationHolder, NavigationMenu, NavigationItem, NavigationLinks,
     ExhibitionTitle, SubTitle,CardHolder, ButtonHolder, LoadMoreButton} from './Exhibition.elements';
 import {Button} from '../GlobalStyle';
+import './HeaderElements.css';
 import Card from './Card';
 import Mask from '../Images/nex.jpg';
 import Magazine from '../Images/second.jpg';
@@ -10,6 +11,7 @@ import Cube from '../Images/fourth.jpg';
 import Aquarel from '../Images/fifth.jpg';
 import Squares from '../Images/sixth.jpg';
 import {useState, useEffect} from 'react';
+
 
 
 const Exhibition = () => {
@@ -31,7 +33,7 @@ const Exhibition = () => {
         if(handleSort){
             let x = document.getElementById("general");
             
-        }
+        }else ;
 
     }
 
@@ -43,10 +45,10 @@ const Exhibition = () => {
                                 <ExhibitionTitle>Current Exhibition</ExhibitionTitle>
                                 <SubTitle>The purpose of modern museums is to collect, preserve, interpret, and display objects.</SubTitle>
                                     <NavigationMenu>
-                                        <NavigationItem onClick={() => {handleColor(); handleSort(); handleImage('none')}}>    
+                                        <NavigationItem onClick={() => {handleColor(); handleSort(); handleImage()}}>    
                                             {handleBorder()}
                                         </NavigationItem>
-                                        <NavigationItem id="general">    
+                                        <NavigationItem>    
                                             <NavigationLinks to='/'>General</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
@@ -64,12 +66,14 @@ const Exhibition = () => {
                                     </NavigationMenu>
                             </NavigationHolder>
                             <CardHolder>
-                            <Card type="General" title="Galleries have multiple roles,both visible and invisible" date="1 Jan - 7 Jan 2021" link={Mask}/>
-                            <Card type="History" title="Artists,often by going above and beyond the normal work" date="8 Jan - 15 Jan 2021" link={Magazine} size="450"/>
-                            <Card type="Science" title="Promoting their artists,and selling the works" date="16 Jan - 23 Jan 2021" link={Abstract}/>
-                            <Card type="Technology" title="Financial management or book publishing in order to help" date="24 Jan - 31 Jan 2021" link={Cube}/>
-                            <Card type="Art" title="Commision is the percentage of the art sale price" date="1 Feb - 14 Feb 2021" link={Aquarel} size="450"/>
-                            <Card type="General" title="Art sale price that a gallery keeps, with the remainder" date="15 Feb - 22 Feb 2021" link={Squares}/>
+                            <Card type="General" title="Galleries have multiple roles,both visible and invisible" date="1 Jan - 7 Jan 2021" link={Mask} id="general"/>
+                            <Card type="History" title="Artists,often by going above and beyond the normal work" date="8 Jan - 15 Jan 2021" link={Magazine} size="450" id="history"/>
+                            <Card type="Science" title="Promoting their artists,and selling the works" date="16 Jan - 23 Jan 2021" link={Abstract} id="science"/>
+                            <div className="">
+                            <Card type="Technology" title="Financial management or book publishing in order to help" date="24 Jan - 31 Jan 2021" link={Cube} id="technology"/>
+                            </div>
+                            <Card type="Art" title="Commision is the percentage of the art sale price" date="1 Feb - 14 Feb 2021" link={Aquarel} size="450" id="art"/>
+                            <Card type="General" title="Art sale price that a gallery keeps, with the remainder" date="15 Feb - 22 Feb 2021" link={Squares} id="general"/>
                             </CardHolder>
                             <ButtonHolder>
                                 <LoadMoreButton style={{fontFamily: 'duera'}}>LOAD MORE</LoadMoreButton>
