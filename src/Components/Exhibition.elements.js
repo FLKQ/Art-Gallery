@@ -4,13 +4,22 @@ import {Link} from 'react-router-dom';
 import './HeaderElements.css';
 
 export const ExhibitionSection = styled.section`
-height: 180vh;
-max-height: 180vh;
+height: 200vh;
+max-height: 215vh;
 background-color: #fff;
 `;
 
 export const ExhibitionContainer = styled(Container)`
     width: 80%;
+
+    @media screen and (max-width:960px){
+    width: 88%;
+}
+
+@media screen and (max-width: 960px){
+        width: 100%;
+    
+}
 `;
 
 export const NavigationHolder = styled.div`
@@ -31,6 +40,18 @@ font-size: 23px;
 margin-top: 45px;
 width: 35%;
 
+@media screen and (max-width:1330px){
+    width: 70%;
+    font-size: 30px;
+};
+
+@media screen and (max-width:960px){
+    width: 70%;
+    font-size: 30px;
+};
+
+
+
 `;
 
 export const NavigationMenu = styled.ul`
@@ -45,10 +66,24 @@ border-bottom: 2px solid #a5a6a6;
 font-family: "Times New Roman";
 list-style: none;
 
+@media screen and (max-width: 1330px){
+    width: 60%;
+}
+
+@media screen and (max-width: 960px){
+    width: 80%;
+    white-space: nowrap;
+    
+}
 `;
 
 export const NavigationItem = styled.li`
 margin-bottom: 10px;
+
+@media screen and (max-width: 960px){
+        margin-right: 20px;
+    
+}
 `;
 
 export const NavigationLinks = styled(Link)`
@@ -60,6 +95,38 @@ cursor: pointer;
 
 export const CardHolder = styled.div`
 display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto;
+
+@media screen and (max-width:1330px){
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto ;
+}
+
+@media screen and (max-width:960px){
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+`;
+
+
+export const ButtonHolder = styled.div`
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+@media screen and (max-width: 960px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+`;
+
+export const LoadMoreButton = styled(Button)`
+padding: 10px 60px 6px 60px;
+font-size: 20px;
+
 `;
 
 

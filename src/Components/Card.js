@@ -8,7 +8,7 @@ import {CardContainer, CardImageHolder, CardImage, CardTextHolder, CardType, Car
             <>
             <CardContainer>
                 <CardImageHolder>
-                    <CardImage src={props.link}/>
+                    <CardImage src={props.link} style={{height: props.size + 'px'}}/>
                 </CardImageHolder>
                 <CardTextHolder>
                     <CardType>{props.type}</CardType>

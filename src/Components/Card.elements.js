@@ -16,6 +16,10 @@ export const CardImage = styled.img`
 width: 400px;
 height: 400px;
 object-fit: cover;
+
+@media screen and (max-width:376px){
+    width: 300px;
+};
 `;
 
 export const CardTextHolder = styled.div`
@@ -32,7 +36,7 @@ export const CardTitle = styled.h1 `
 margin-bottom: 25px;
 font-family: duera;
 font-size: 33px;
-width: 30%;
+width: 90%;
 
 `
 
