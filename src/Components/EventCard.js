@@ -1,6 +1,7 @@
 import React from 'react'
 import { VerticalCardHolder, VerticalCardContainer, VerticalCardDate,
-    VerticalCardMonth, VerticalCardDay,ColumnTextHolder,VerticalCardImage,ClockIcon,TimeHolder,ReadMoreButton} from './Events.elements.js';
+    VerticalCardMonth, VerticalCardDay,ColumnTextHolder,VerticalCardImage,ClockIcon,TimeHolder,ReadMoreButton
+, RandomDiv} from './Events.elements.js';
 import {Button} from '../GlobalStyle';
 
 
@@ -10,6 +11,7 @@ function EventCard(props){
             <>
                 <VerticalCardHolder>
                     <VerticalCardContainer>
+                        
                         <VerticalCardDate>{props.date}</VerticalCardDate>
                         <ColumnTextHolder>
                             <VerticalCardMonth>{props.month}</VerticalCardMonth>
@@ -23,7 +25,7 @@ function EventCard(props){
                                 <VerticalCardDay>{props.time}</VerticalCardDay>
                             </TimeHolder>
                         </ColumnTextHolder>
-                        <ReadMoreButton style={{fontFamily: 'duera'}}>READ MORE</ReadMoreButton>
+                        <ReadMoreButton style={{fontFamily: 'duera'}}>READ MORE</ReadMoreButton>      
                     </VerticalCardContainer>
                 </VerticalCardHolder>
 

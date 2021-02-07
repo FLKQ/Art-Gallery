@@ -4,8 +4,8 @@ import './HeaderElements.css';
 import {FaClock} from 'react-icons/fa';
 
 export const EventSection = styled.section`
-height: 180vh;
-max-height: 180vh;
+height: 130vh;
+max-height: 150vh;
 background-color: #e3f88f;
 
 `;
@@ -38,17 +38,30 @@ height: 200px;
 background-color: #fff;
 margin-bottom: 20px;
 
+
+@media screen and (max-width: 960px){
+    width: 500px;
+    height: 570px;
+}
 `;
 
 export const VerticalCardContainer = styled.div`
 display: flex;
 align-items: center;
+
+@media screen and (max-width: 960px){
+    flex-direction: column;
+}
 `;
 
 export const VerticalCardDate = styled.h1`
 font-size: 100px;
 font-family: duera;
 padding-left: 55px;
+
+@media screen and (max-width: 960px){
+    padding: 0;
+}
 `;
 
 export const VerticalCardMonth = styled.h1`
@@ -64,6 +77,10 @@ color: #a5a6a6;
 
 export const ColumnTextHolder = styled.div`
 padding-left: 20px;
+
+@media screen and (max-width: 960px){
+    padding: 0;
+}
 `;
 
 export const VerticalCardImage = styled.img`
@@ -73,6 +90,14 @@ margin-left: 100px;
 margin-right: 20px;
 margin-top: 23px;
 object-fit: cover;
+
+@media screen and (max-width: 960px){
+    width: 350px;
+    height: 200px;
+    margin: 0;
+    border-radius: 10px;
+}
+
 `;
 
 export const ClockIcon = styled(FaClock)`
@@ -84,6 +109,9 @@ margin-top: 5px;
 export const TimeHolder = styled.div`
 display: flex;
 
+@media screen and (max-width: 960px){
+   justify-content: center;
+}
 `;
 
 export const ReadMoreButton = styled(Button)`
@@ -92,4 +120,12 @@ font-size: 20px;
 margin-left: ${({noMargin}) => (noMargin ? "0px" : "23rem")};
 background-color: ${({standart}) => (standart ? "#8a66ad" : "#fff")};
 margin-top: ${({hugeTopMargin}) => (hugeTopMargin ? "5rem" : "0px")};
+
+@media screen and (max-width: 960px){
+    margin-left: 0;
+    margin-top: 25px;
+}
 `;
+
+
+

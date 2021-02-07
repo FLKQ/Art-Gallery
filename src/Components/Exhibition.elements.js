@@ -7,6 +7,11 @@ export const ExhibitionSection = styled.section`
 height: 200vh;
 max-height: 215vh;
 background-color: #fff;
+
+@media screen and (max-width:960px){
+    height: 520vh;
+    max-height: 550vh;
+}
 `;
 
 export const ExhibitionContainer = styled(Container)`
