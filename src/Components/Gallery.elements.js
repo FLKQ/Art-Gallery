@@ -3,7 +3,7 @@ import {Container, Button} from '../GlobalStyle';
 import {Link} from 'react-router-dom';
 import './HeaderElements.css';
 
-export const ExhibitionSection = styled.section`
+export const GallerySection = styled.section`
 height: 155vh;
 max-height: 215vh;
 background-color: #121212;
@@ -14,7 +14,7 @@ background-color: #121212;
 }
 
 @media screen and (max-width:960px){
-    height: 530vh;
+    height: 370vh;
     max-height: 550vh;
 }
 
@@ -24,7 +24,7 @@ background-color: #121212;
 }
 `;
 
-export const ExhibitionContainer = styled(Container)`
+export const GalleryContainer = styled(Container)`
     width: 80%;
 
     @media screen and (max-width:960px){
@@ -39,15 +39,19 @@ export const ExhibitionContainer = styled(Container)`
 
 
 
-export const ExhibitionTitle = styled.h1`
+export const GalleryTitle = styled.h1`
 font-family: Duera;
 font-size: 70px;
 width: 20%;
 color: #fff;
 padding-top: 70px;
+
+@media screen and (max-width: 960px){
+    width: 40%;
+}
 `;
 
-export const SubTitle = styled.p`
+export const GallerySubTitle = styled.p`
 font-family: "Times New Roman";
 font-size: 23px;
 margin-top: 45px;
@@ -61,7 +65,7 @@ color: #fff;
 };
 
 @media screen and (max-width:960px){
-    width: 70%;
+    width: 90%;
     font-size: 30px;
 };
 
@@ -73,10 +77,15 @@ color: #fff;
 
 export const CardHolder = styled.div`
 display: grid;
-grid-template-columns: 510px 510px 500px;
+grid-template-columns: 485px 485px 485px;
 grid-template-rows: 140px 140px 140px 140px 140px 140px 140px;
 
-
+@media screen and (max-width: 960px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 `;
@@ -95,7 +104,7 @@ export const ButtonHolder = styled.div`
 }
 `;
 
-export const LoadMoreButton = styled(Button)`
+export const ExploreMoreButton = styled(Button)`
 padding: 10px 60px 6px 60px;
 font-size: 20px;
 color: #fff;
@@ -104,6 +113,11 @@ color: #fff;
 
 export const GalleryImg = styled.img`
 object-fit: cover;
+
+@media screen and (max-width: 960px){
+    margin-bottom: 20px;
+}
+
 `;
 
 
