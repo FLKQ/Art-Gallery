@@ -5,6 +5,7 @@ import GlobalStyle from './GlobalStyle';
 import Header from './Components/Header';
 import Exhibition from './Components/Exhibition';
 import Events from './Components/Events';
+import Gallery from './Components/Gallery';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Header/>
           <Exhibition/>
           <Events/>
+          <Gallery/>
           <Switch>
             <Route path = "/"/>
           </Switch>

@@ -8,6 +8,15 @@ height: 130vh;
 max-height: 150vh;
 background-color: #e3f88f;
 
+@media screen and (max-width: 960px){
+    height: 275vh;
+max-height: 300vh;
+}
+
+@media screen and (max-width: 376px){
+    height: 305vh;
+max-height: 305vh;
+}
 `;
 
 
@@ -41,8 +50,14 @@ margin-bottom: 20px;
 
 @media screen and (max-width: 960px){
     width: 500px;
-    height: 570px;
+    height: 620px;
 }
+
+@media screen and (max-width: 376px){
+    width: 325px;
+    height: 620px;
+}
+
 `;
 
 export const VerticalCardContainer = styled.div`
@@ -68,7 +83,11 @@ export const VerticalCardMonth = styled.h1`
 font-size: 30px;
 margin-bottom: 25px;
 font-family: duera;
-`
+
+@media screen and (max-width: 960px){
+    margin-bottom: 10px;
+}
+`;
 
 export const VerticalCardDay = styled.p`
 font-size: 22px;
@@ -94,8 +113,12 @@ object-fit: cover;
 @media screen and (max-width: 960px){
     width: 350px;
     height: 200px;
-    margin: 0;
+    margin: 20px 0px 20px 0px;
     border-radius: 10px;
+
+}
+@media screen and (max-width: 376px){
+    width: 280px;
 }
 
 `;
@@ -123,7 +146,7 @@ margin-top: ${({hugeTopMargin}) => (hugeTopMargin ? "5rem" : "0px")};
 
 @media screen and (max-width: 960px){
     margin-left: 0;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 `;
 

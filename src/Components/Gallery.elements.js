@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 import './HeaderElements.css';
 
 export const ExhibitionSection = styled.section`
-height: 200vh;
+height: 155vh;
 max-height: 215vh;
-background-color: #fff;
+background-color: #121212;
 
 @media screen and (max-width:1639px){
     height: 230vh;
@@ -37,23 +37,23 @@ export const ExhibitionContainer = styled(Container)`
 }
 `;
 
-export const NavigationHolder = styled.div`
 
-
-`;
 
 export const ExhibitionTitle = styled.h1`
 font-family: Duera;
 font-size: 70px;
-margin-top: 100px;
 width: 20%;
+color: #fff;
+padding-top: 70px;
 `;
 
 export const SubTitle = styled.p`
 font-family: "Times New Roman";
 font-size: 23px;
 margin-top: 45px;
+margin-bottom: 45px;
 width: 35%;
+color: #fff;
 
 @media screen and (max-width:1330px){
     width: 70%;
@@ -69,59 +69,16 @@ width: 35%;
 
 `;
 
-export const NavigationMenu = styled.ul`
-display: flex;
-justify-content: space-between;
-width: 40%;
-font-size: 20px;
-margin-top: 45px;
-border-bottom: 2px solid #a5a6a6;
 
-
-font-family: "Times New Roman";
-list-style: none;
-
-@media screen and (max-width: 1330px){
-    width: 60%;
-}
-
-@media screen and (max-width: 960px){
-    width: 80%;
-    white-space: nowrap;
-    
-}
-`;
-
-export const NavigationItem = styled.li`
-margin-bottom: 20px;
-
-@media screen and (max-width: 960px){
-        margin-right: 10px;
-    
-}
-`;
-
-export const NavigationLinks = styled(Link)`
-text-decoration: none;
-color : #a5a6a6;
-cursor: pointer;
-
-`;
 
 export const CardHolder = styled.div`
 display: grid;
-grid-template-columns: auto auto auto;
-grid-template-rows: auto auto;
+grid-template-columns: 510px 510px 500px;
+grid-template-rows: 140px 140px 140px 140px 140px 140px 140px;
 
-@media screen and (max-width:1330px){
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto ;
-}
 
-@media screen and (max-width:960px){
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
-}
+
+
 `;
 
 
@@ -141,7 +98,15 @@ export const ButtonHolder = styled.div`
 export const LoadMoreButton = styled(Button)`
 padding: 10px 60px 6px 60px;
 font-size: 20px;
+color: #fff;
 
 `;
+
+export const GalleryImg = styled.img`
+object-fit: cover;
+`;
+
+
+
 
 

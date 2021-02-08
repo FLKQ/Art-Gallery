@@ -11,7 +11,6 @@ function EventCard(props){
             <>
                 <VerticalCardHolder>
                     <VerticalCardContainer>
-                        
                         <VerticalCardDate>{props.date}</VerticalCardDate>
                         <ColumnTextHolder>
                             <VerticalCardMonth>{props.month}</VerticalCardMonth>
