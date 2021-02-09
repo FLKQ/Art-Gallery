@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import Exhibition from './Components/Exhibition';
 import Events from './Components/Events';
 import Gallery from './Components/Gallery';
-
+import AboutUs from './Components/AboutUs';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Exhibition/>
           <Events/>
           <Gallery/>
+          <AboutUs/>
           <Switch>
             <Route path = "/"/>
           </Switch>
