@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import './HeaderElements.css';
 import {Container, Button} from '../GlobalStyle';
+import {FaPlay} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 
 export const AboutUsSection = styled.section`
 height: 180vh;
-max-height: 180vh;
+max-height: 220vh;
 background-color: #fff;
 
 `;
@@ -93,6 +95,7 @@ align-self: center;
 export const DigitSubtitle = styled.p`
 font-size: 22px;
 color: #a5a6a6;
+margin-bottom: 10px;
 `;
 
 export const RandomDiv = styled.div`
@@ -104,3 +107,40 @@ width: 70%;
 
 `;
 
+export const VideoPreviewHolder = styled.div`
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 110vh;
+background-color: #fff;
+`;
+
+export const VideoPreview = styled.img`
+position: absolute;
+width: 1500px;
+height: 600px;
+object-fit: cover;
+`;
+
+export const VideoPlayButton = styled.div`
+position:relative;
+display: flex;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background-color: #8a66ad;
+align-items: center;
+justify-content: center;
+`;
+
+export const VideoPlayButtonIcon = styled(FaPlay)`
+position: absolute;
+width: 30px;
+height: 30px;
+color: black;
+`;
+
+export const VideoPlayButtonLink = styled.a`
+text-decoration: none;
+`;

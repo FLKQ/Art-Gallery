@@ -1,9 +1,12 @@
 import React from 'react'
 import './HeaderElements.css';
 import {AboutUsSection, AboutUsContainer, AboutUsImageTextConnecter, AboutUsImageHolder, AboutUsImage, AboutUsColumnTextHolder, AboutUsTitle,
-    AboutUsSubTitle, AboutUsButton, DigitsHolder, ColumnDigitsHolder,AboutUsTitleMid,AboutUsTitleBot,AboutUsSubTitleBot,RandomDiv} from './AboutUs.elements.js';
+    AboutUsSubTitle, AboutUsButton, DigitsHolder, ColumnDigitsHolder,AboutUsTitleMid,AboutUsTitleBot,AboutUsSubTitleBot,RandomDiv,VideoPreviewHolder,
+    VideoPreview, VideoPlayButton, VideoPlayButtonIcon,VideoPlayButtonLink} from './AboutUs.elements.js';
 import ColumnDigits from './ColumnDigits';
-import JustTest from '../Images/nex.jpg';
+import Architecture from '../Images/videoPic.jpg';
+import BorderDrawing from '../Images/borderDrawing.jpg';
+import StatementComponent from './StatementComponent';
 
 const AboutUs = () => {
     return (
@@ -12,7 +15,7 @@ const AboutUs = () => {
                 <AboutUsContainer>
                     <AboutUsImageTextConnecter>
                         <AboutUsImageHolder>
-                            <AboutUsImage src={JustTest}/>
+                            <AboutUsImage src={BorderDrawing}/>
                         </AboutUsImageHolder>
                         <AboutUsColumnTextHolder>
                             <AboutUsTitle>Artistic,</AboutUsTitle>
@@ -29,13 +32,22 @@ const AboutUs = () => {
                             <ColumnDigits digitTitle="730" digitSubTop="Community" digitSubBot="perspective"/>
                     </DigitsHolder>
                     <DigitsHolder>
-                            <ColumnDigits digitTitle="730" digitSubTop="Community" digitSubBot="perspective"/>
+                            <ColumnDigits digitTitle="420" digitSubTop="Education" digitSubBot="of the public"/>
                     </DigitsHolder>
                     <DigitsHolder>
-                            <ColumnDigits digitTitle="730" digitSubTop="Community" digitSubBot="perspective"/>
+                            <ColumnDigits digitTitle="5000" digitSubTop="One's point" digitSubBot="of view"/>
                     </DigitsHolder>
                     </RandomDiv>
-                    
+                    <VideoPreviewHolder>
+                        <VideoPreview src={Architecture}/>
+                        <VideoPlayButtonLink href="https://www.youtube.com/watch?v=AafJiUJ2b20&ab_channel=EditMoment%27S">
+                        <VideoPlayButton>
+                            <VideoPlayButtonIcon/>
+                        </VideoPlayButton>
+                        </VideoPlayButtonLink>
+
+                    </VideoPreviewHolder>
+                    <StatementComponent/>
             </AboutUsSection>
         </>
     )
