@@ -7,6 +7,7 @@ import Exhibition from './Components/Exhibition';
 import Events from './Components/Events';
 import Gallery from './Components/Gallery';
 import AboutUs from './Components/AboutUs';
+import Testimonials from './Components/Testimonials';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Events/>
           <Gallery/>
           <AboutUs/>
+          <Testimonials/>
           <Switch>
             <Route path = "/"/>
           </Switch>

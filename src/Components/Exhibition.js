@@ -11,6 +11,7 @@ import Cube from '../Images/fourth.jpg';
 import Aquarel from '../Images/fifth.jpg';
 import Squares from '../Images/sixth.jpg';
 import {useState, useEffect} from 'react';
+import {FaCalendarAlt} from 'react-icons/fa';
 
 
 
@@ -66,14 +67,14 @@ const Exhibition = () => {
                                     </NavigationMenu>
                             </NavigationHolder>
                             <CardHolder>
-                            <Card type="General" title="Galleries have multiple roles,both visible and invisible" date="1 Jan - 7 Jan 2021" link={Mask} id="general"/>
-                            <Card type="History" title="Artists,often by going above and beyond the normal work" date="8 Jan - 15 Jan 2021" link={Magazine} size="450" id="history"/>
-                            <Card type="Science" title="Promoting their artists,and selling the works" date="16 Jan - 23 Jan 2021" link={Abstract} id="science"/>
+                            <Card type="General" title="Galleries have multiple roles,both visible and invisible" date="1 Jan - 7 Jan 2021" link={Mask} id="general" icon={<FaCalendarAlt/>}/>
+                            <Card type="History" title="Artists,often by going above and beyond the normal work" date="8 Jan - 15 Jan 2021" link={Magazine} size="450" id="history" icon={<FaCalendarAlt/>}/>
+                            <Card type="Science" title="Promoting their artists,and selling the works" date="16 Jan - 23 Jan 2021" link={Abstract} id="science" icon={<FaCalendarAlt/>}/>
                             <div className="">
-                            <Card type="Technology" title="Financial management or book publishing in order to help" date="24 Jan - 31 Jan 2021" link={Cube} id="technology"/>
+                            <Card type="Technology" title="Financial management or book publishing in order to help" date="24 Jan - 31 Jan 2021" link={Cube} id="technology" icon={<FaCalendarAlt/>}/>
                             </div>
-                            <Card type="Art" title="Commision is the percentage of the art sale price" date="1 Feb - 14 Feb 2021" link={Aquarel} size="450" id="art"/>
-                            <Card type="General" title="Art sale price that a gallery keeps, with the remainder" date="15 Feb - 22 Feb 2021" link={Squares} id="general"/>
+                            <Card type="Art" title="Commision is the percentage of the art sale price" date="1 Feb - 14 Feb 2021" link={Aquarel} size="450" id="art" icon={<FaCalendarAlt/>}/>
+                            <Card type="General" title="Art sale price that a gallery keeps, with the remainder" date="15 Feb - 22 Feb 2021" link={Squares} id="general" icon={<FaCalendarAlt/>}/>
                             </CardHolder>
                             <ButtonHolder>
                                 <LoadMoreButton style={{fontFamily: 'duera'}}>LOAD MORE</LoadMoreButton>

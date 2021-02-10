@@ -8,13 +8,13 @@ import {CardContainer, CardImageHolder, CardImage, CardTextHolder, CardType, Car
             <>
             <CardContainer>
                 <CardImageHolder>
-                    <CardImage src={props.link} style={{height: props.size + 'px'}}/>
+                    <CardImage src={props.link} style={{height: props.size + 'px', width: props.widthlol + 'px', borderRadius: props.radius + 'px'}}/>
                 </CardImageHolder>
                 <CardTextHolder>
                     <CardType>{props.type}</CardType>
                     <CardTitle>{props.title}</CardTitle>
                     <CardDateHolder>
-                            <CardDateIcon/>
+                            {props.icon}
                             <CardDateText>{props.date}</CardDateText>
                     </CardDateHolder>
                 </CardTextHolder>

@@ -6,8 +6,8 @@ import {Link} from 'react-router-dom';
 
 
 export const AboutUsSection = styled.section`
-height: 180vh;
-max-height: 220vh;
+height: 440vh; //415
+max-height: 500vh;
 background-color: #fff;
 
 `;
@@ -121,6 +121,7 @@ position: absolute;
 width: 1500px;
 height: 600px;
 object-fit: cover;
+border-radius: 5px;
 `;
 
 export const VideoPlayButton = styled.div`
@@ -143,4 +144,17 @@ color: black;
 
 export const VideoPlayButtonLink = styled.a`
 text-decoration: none;
+`;
+
+export const AboutUsStatementHolder = styled.div`
+height: 40vh;
+display: flex;
+
+justify-content: center;
+`;
+
+export const AbousUsStatementCenterer = styled.div`
+display: flex;
+justify-content: space-between;
+width: 78%;
 `;
