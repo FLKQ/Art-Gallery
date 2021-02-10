@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 
 export const AboutUsSection = styled.section`
-height: 440vh; //415
+height: 415vh; //415
 max-height: 500vh;
 background-color: #fff;
 

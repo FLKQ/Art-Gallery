@@ -46,3 +46,39 @@ background-color: #8a66ad;
 border: none;
 
 `;
+
+export const RatingCardContainer = styled.div`
+
+`;
+
+export const RatingHolder = styled.div`
+color: black;
+`;
+
+export const RatingComment = styled.p`
+
+`;
+
+export const RatingPersonHolder = styled.div`
+
+`;
+
+export const RatingPersonPhoto = styled.img`
+width: 50px;
+height: 50px;
+object-fit: cover;
+`;
+
+export const RatingPersonInfoHolder = styled.div`
+
+`;
+
+export const RatingPersonName = styled.h1`
+
+`;
+
+export const RatingPersonDate = styled.p`
+
+`;
+
+
