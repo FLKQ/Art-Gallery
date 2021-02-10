@@ -7,12 +7,12 @@ const Testimonials = () => {
             <TestimonialsSection>
                 <TestimonialContainer>
                     <TestimonialHolder>
+                    <TestimonialsTitle>Testimonials</TestimonialsTitle>
                         <TestimonialsTextHolder>
-                            <TestimonialsTitle>Testimonials</TestimonialsTitle>
                             <TestimonialsSubtext>Display objects of artistic, cultural, or scientific significance for the education of the public.</TestimonialsSubtext>
+                            <TestimonialsButton style={{fontFamily: 'duera'}}>EXPLORE ALL</TestimonialsButton>
                         </TestimonialsTextHolder>
-                            <TestimonialsButton>EXPLORE ALL</TestimonialsButton>
-                    </TestimonialHolder>
+                        </TestimonialHolder>
                 </TestimonialContainer>
             </TestimonialsSection>
         </>
