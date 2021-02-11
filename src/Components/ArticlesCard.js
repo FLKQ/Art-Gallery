@@ -5,7 +5,7 @@ import {ImageInsideText, ImageInsideTypeDateHolder, ImageInsideType, ImageInside
 const ArticlesCard = props => {
     return (
         <>
-            <ImageInsideText style={{position: props.inside }}>
+            <ImageInsideText style={{position: props.inside, marginLeft: props.distance + 'px' }}>
                 <ImageInsideTypeDateHolder>
                     <ImageInsideType>{props.type}</ImageInsideType>
                     <ImageInsideDate>{props.date}</ImageInsideDate>

@@ -42,13 +42,37 @@ margin-top: 100px;
 
 `;
 
+export const ImageContainerCenterer = styled.div`
+display: flex;
+justify-content: space-between;
+width: 77%;
+
+`;
+
 export const ArticlesImagesWrapper = styled.div`
 position:relative;
-width: 800px;
-height: 500px;
+width: 900px;
+height: 491px;
 background-image: url(${ArticlesMain});
 background-size: cover;
 border-radius: 5px;
+`;
+
+export const ArticlesImageSide = styled.img`
+width: 200px;
+height: 150px;
+object-fit: cover;
+border-radius: 5px;
+margin-left: 20px;
+
+`;
+
+export const SideCardWrapper = styled.div`
+
+`;
+
+export const SideCardHolder = styled.div`
+display: flex;
 `;
 // ArticleCard---------------------------------------------------
 
