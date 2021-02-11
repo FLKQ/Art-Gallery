@@ -1,5 +1,6 @@
 import React from 'react'
-import {TestimonialContainer, TestimonialHolder, TestimonialsTextHolder, TestimonialsTitle, TestimonialsSubtext, TestimonialsButton, TestimonialsSection} from './Testimonials.elements';
+import {TestimonialContainer, TestimonialHolder, TestimonialsTextHolder, TestimonialsTitle, TestimonialsSubtext, TestimonialsButton,
+     TestimonialsSection, RatingCardWrapper,RatingCardSpreader} from './Testimonials.elements';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import RatingCard from './RatingCard';
 import PersonTwo from '../Images/PersonTwo.jpg';
@@ -18,12 +19,21 @@ const Testimonials = () => {
                         </TestimonialsTextHolder>
                         </TestimonialHolder>
                 </TestimonialContainer>
-                {/* <RatingCard start1={<BsStarFill/>} start2={<BsStarFill/>} start3={<BsStarFill/>}
-                start4={<BsStarFill/>} start5={<BsStarFill/>} comment="Museums teach critical thinking,
+
+                 <RatingCardWrapper>
+                     <RatingCardSpreader>
+             <RatingCard star1={<BsStarFill style={{width: '20px', height: '20px'}}/>} star2={<BsStarFill style={{width: '20px', height: '20px'}}/>} star3={<BsStarFill style={{width: '20px', height: '20px'}}/>}
+                star4={<BsStarFill style={{width: '20px', height: '20px'}}/>} star5={<BsStarFill style={{width: '20px', height: '20px'}}/>} comment="Museums teach critical thinking,
                 empathy,and other generally important skills and dispositions. Trips to museums help
-                get kids excited" photo={PersonFirst} name="Antonin Hafer" date="10 Jan 2021" />
-                <RatingCard/> */}
+                get kids excited" photo={PersonTwo} name="Antonin Hafer" date="10 Jan 2021" />
+                <RatingCard star1={<BsStarFill style={{width: '20px', height: '20px'}}/>} star2={<BsStarFill style={{width: '20px', height: '20px'}}/>} star3={<BsStarFill style={{width: '20px', height: '20px'}}/>}
+                star4={<BsStarFill style={{width: '20px', height: '20px'}}/>} star5={<BsStar style={{width: '20px', height: '20px'}}/>} comment="About school subjects.Museums teach
+                subject-specific content and skills.Museums expand the general world knowledge of students." photo={PersonFirst} name="Paulina Gayosos" date="7 Jan 2021" />
+                </RatingCardSpreader>
+            </RatingCardWrapper>    
+                 
             </TestimonialsSection>
+             
         </>
     )
 }
