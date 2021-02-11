@@ -5,7 +5,7 @@ const GetTicket = props => {
     return (
         <>
             <TicketContainer>
-                <TicketHolder>
+                <TicketHolder style={{backgroundColor: props.colored}}>
                     <TextCenterer>
                         <TicketTitle>{props.title}</TicketTitle>
                         <TicketSubTitle>{props.subtitle}</TicketSubTitle>

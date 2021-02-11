@@ -12,16 +12,15 @@ const ArticlesSideCard = () => {
             <SideCardWrapper>
                 <SideCardHolder>
                     <ArticlesImageSide src={sidefirst}/>
-                    <ArticlesCard type="Events" date="12 Jan 2021" subtext="Artworks by emerging, established or master artists" distance="25" />
+                    <ArticlesCard type="Events" date="12 Jan 2021" subtext="Artworks by emerging, established or master artists" distance="25" fullsize="70"/>
                 </SideCardHolder>
                 <SideCardHolder>
                     <ArticlesImageSide src={sidesecond}/>
-                    <ArticlesCard type="Art & Science" date="8 Jan 2021" subtext="Physical galleries, where exhi" distance="25"/>
+                    <ArticlesCard type="Art & Science" date="8 Jan 2021" subtext="Physical galleries, where exhibitions" distance="25" fullsize="70" />
                 </SideCardHolder>
                 <SideCardHolder>
                     <ArticlesImageSide src={sidethird}/>
-                    <ArticlesCard type="History" date="3 Jan 2021" subtext="An art gallery is a place where
-                        one can see and buy" distance="25"/>
+                    <ArticlesCard type="History" date="3 Jan 2021" subtext="Space, and virtual galleries, where exhibitions" distance="25" fullsize="70"/>
                 </SideCardHolder>
             </SideCardWrapper>
         </>

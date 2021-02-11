@@ -3,6 +3,7 @@ import {ArticlesSection, ArticlesImagesWrapper, ArticlesContainer,
     ImageContainerCenterer, ArticlesTitle, ArticlesSubtext, ArticlesWrapper,ImageContainer} from './Articles.elements';
 import ArticlesCard from './ArticlesCard';
 import ArticlesSideCard from './ArticlesSideCard';
+import GetTicket from './GetTicket';
 
 const Articles = () => {
     return (
@@ -24,6 +25,7 @@ const Articles = () => {
                             <ArticlesSideCard/>
                         </ImageContainerCenterer>
                     </ImageContainer>
+                    <GetTicket title="Newsletter" subtitle="Get your latest news about gallery." value="SUBSCRIBE" colored='#e3f88f'/>
             </ArticlesSection>
         </>
     )

@@ -3,7 +3,7 @@ import ArticlesMain from '../Images/ArticlesMain.jpg'
 
 
 export const ArticlesSection = styled.section`
-height: 100vh;
+height: 120vh;
 background-color: #fff;
 
 `;
@@ -51,7 +51,7 @@ width: 77%;
 
 export const ArticlesImagesWrapper = styled.div`
 position:relative;
-width: 900px;
+width: 1000px;
 height: 491px;
 background-image: url(${ArticlesMain});
 background-size: cover;
@@ -105,5 +105,5 @@ margin-left: 20px;
 export const ImageInsideSubtext = styled.p`
 font-family: duera;
 font-size: 30px;
-width: 60%;
+width: ${({fullsize}) => (fullsize ? '100%' : '60%')};
 `;

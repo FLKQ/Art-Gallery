@@ -10,7 +10,7 @@ const ArticlesCard = props => {
                     <ImageInsideType>{props.type}</ImageInsideType>
                     <ImageInsideDate>{props.date}</ImageInsideDate>
                 </ImageInsideTypeDateHolder>
-                    <ImageInsideSubtext>{props.subtext}</ImageInsideSubtext>
+                    <ImageInsideSubtext style={{width: props.fullsize + '%'}}>{props.subtext}</ImageInsideSubtext>
             </ImageInsideText>
         </>
     )
