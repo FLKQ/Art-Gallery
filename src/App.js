@@ -8,6 +8,7 @@ import Events from './Components/Events';
 import Gallery from './Components/Gallery';
 import AboutUs from './Components/AboutUs';
 import Testimonials from './Components/Testimonials';
+import Articles from './Components/Articles';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Gallery/>
           <AboutUs/>
           <Testimonials/>
+          <Articles/>
           <Switch>
             <Route path = "/"/>
           </Switch>
