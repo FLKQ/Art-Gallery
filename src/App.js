@@ -10,6 +10,7 @@ import AboutUs from './Components/AboutUs';
 import Testimonials from './Components/Testimonials';
 import Articles from './Components/Articles';
 import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Testimonials/>
           <Articles/>
           <ContactUs/>
+          <Footer/>
           <Switch>
             <Route path = "/"/>
           </Switch>

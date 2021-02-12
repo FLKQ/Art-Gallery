@@ -35,7 +35,6 @@ cursor: pointer;
 text-decoration: none;
 font-size: 3rem;
 display: flex;
-align-items: center;
 margin-left: 40px;
 font-family: duera;
 

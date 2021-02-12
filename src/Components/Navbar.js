@@ -16,7 +16,7 @@ const Navbar = () => {
         <IconContext.Provider value = {{color: 'fff'}}>
                 <Nav>
                         <NavbarContainer>
-                            <NavLogo to="/">
+                            <NavLogo to="/" style={{alignItems: 'center'}}>
                                 <NavIcon/>
                                     GAL
                                 </NavLogo>
