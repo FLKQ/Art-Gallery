@@ -3,7 +3,7 @@ import ArticlesMain from '../Images/ArticlesMain.jpg'
 
 
 export const ArticlesSection = styled.section`
-height: 120vh;
+height: 160vh;
 background-color: #fff;
 
 `;

@@ -9,6 +9,7 @@ import Gallery from './Components/Gallery';
 import AboutUs from './Components/AboutUs';
 import Testimonials from './Components/Testimonials';
 import Articles from './Components/Articles';
+import ContactUs from './Components/ContactUs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <AboutUs/>
           <Testimonials/>
           <Articles/>
+          <ContactUs/>
           <Switch>
             <Route path = "/"/>
           </Switch>

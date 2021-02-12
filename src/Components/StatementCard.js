@@ -6,7 +6,7 @@ import {StatementCardContainer, IconTextHolder, StatementIconMasks,
 function StatementCard (props) {
     return (
         <>
-            <WholeStatementHolder>
+            <WholeStatementHolder style={{width: props.stretched + '%'}}>
                 <StatementCardContainer>
                     <IconTextHolder>
                         <IconHolder>
