@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactUsSection = styled.section`
-height: 100vh;
+height: 92vh;
 background-color: #121212;
 color: white;
 `;
@@ -13,7 +13,7 @@ justify-content: space-between;
 `;
 
 export const ContactUsWrapper = styled.div`
-
+display:flex;
 `;
 
 export const ContactUsInfoWrapper = styled.div`
@@ -31,5 +31,11 @@ export const ContactUsSubtitle = styled.p`
 margin-bottom: 20px;
 font-size: 22px;
 width: 65%;
+`;
+
+export const ContactUsMap = styled.img`
+height: 890px;
+width: 1000px;
+object-fit: cover;
 `;
 

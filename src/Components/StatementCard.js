@@ -1,6 +1,7 @@
 import React from 'react'
 import {StatementCardContainer, IconTextHolder, StatementIconMasks,
-    StatementIconPalettee, StatementIconUniversity, StatementTitle, StatementSubTitle,IconHolder,WholeStatementHolder}from './StatementCard.elements';
+    StatementIconPalettee, StatementIconUniversity, StatementTitle,
+    StatementTitleBottom, TitlesHolder,StatementSubTitle,IconHolder,WholeStatementHolder}from './StatementCard.elements';
 
 
 function StatementCard (props) {
@@ -12,7 +13,10 @@ function StatementCard (props) {
                         <IconHolder>
                             {props.icon}
                         </IconHolder>
-                            <StatementTitle>{props.StatementTitle}</StatementTitle>
+                        <TitlesHolder>
+                            <StatementTitle style={{color: props.fadedaway}}>{props.StatementTitle}</StatementTitle>
+                            <StatementTitleBottom style={{color: props.fadedaway}}>{props.StatementTitleBottom}</StatementTitleBottom>
+                        </TitlesHolder>                    
                     </IconTextHolder>
                             <StatementSubTitle>{props.StatementSubTitle}</StatementSubTitle>
                 </StatementCardContainer>
