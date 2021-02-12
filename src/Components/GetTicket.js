@@ -5,13 +5,16 @@ const GetTicket = props => {
     return (
         <>
             <TicketContainer>
-                <TicketHolder style={{backgroundColor: props.colored}}>
-                    <TextCenterer>
+                <TicketHolder style={{backgroundColor: props.colored, justifyContent: props.spacevalue}} >
+                    <TextCenterer style={{color: props.textstyle, marginLeft: props.centererdistace + 'px'}}>
                         <TicketTitle>{props.title}</TicketTitle>
-                        <TicketSubTitle>{props.subtitle}</TicketSubTitle>
+                        <TicketSubTitle style={{width: props.fullsize + '%'}}>{props.subtitle}</TicketSubTitle>
                     </TextCenterer>
-                        <TicketButton style={{fontFamily: 'duera'}}>{props.value}</TicketButton>
+                        {props.field}
+                        <TicketButton style={{fontFamily: 'duera', marginRight: props.buttondistance + 'px'}}>{props.value}</TicketButton>
+                        
                 </TicketHolder>
+                
             </TicketContainer>
         </>
     )

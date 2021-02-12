@@ -1,9 +1,10 @@
 import React from 'react'
 import {ArticlesSection, ArticlesImagesWrapper, ArticlesContainer,
-    ImageContainerCenterer, ArticlesTitle, ArticlesSubtext, ArticlesWrapper,ImageContainer} from './Articles.elements';
+    ImageContainerCenterer, ArticlesTitle, GetTicketWrapper, ArticlesSubtext, NewsletterCardInput, ArticlesWrapper,ImageContainer} from './Articles.elements';
 import ArticlesCard from './ArticlesCard';
 import ArticlesSideCard from './ArticlesSideCard';
 import GetTicket from './GetTicket';
+
 
 const Articles = () => {
     return (
@@ -25,7 +26,11 @@ const Articles = () => {
                             <ArticlesSideCard/>
                         </ImageContainerCenterer>
                     </ImageContainer>
-                    <GetTicket title="Newsletter" subtitle="Get your latest news about gallery." value="SUBSCRIBE" colored='#e3f88f'/>
+                    <GetTicketWrapper>
+                        <GetTicket fullsize="100" centererdistace="150" buttondistance="150" spacevalue="space-between" title="Newsletter" subtitle="Get your latest news about gallery." value="SUBSCRIBE" colored='#e3f88f'
+                        textstyle = "black"field={<NewsletterCardInput type="text" placeholder="Your Email" style={{padding: '20px 80px 20px 30px', borderRadius: '5px', border: 'none',
+                        fontSize: "22px", color: 'black'}}/>}/>
+                    </GetTicketWrapper>
             </ArticlesSection>
         </>
     )

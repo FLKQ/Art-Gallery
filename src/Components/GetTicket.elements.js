@@ -16,7 +16,7 @@ background-color: #121212;
 color: #fff;
 width: 78%;
 height: 300px;
-justify-content: space-around;
+justify-content: ${({spacestyle}) => (spacestyle ? 'space-between' : 'space-around')};  //space-around
 border-radius: 5px;
 
 `;

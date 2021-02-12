@@ -74,6 +74,14 @@ export const SideCardWrapper = styled.div`
 export const SideCardHolder = styled.div`
 display: flex;
 `;
+
+export const NewsletterCardInput = styled.input`
+margin-left: 15rem;
+`;
+
+export const GetTicketWrapper = styled.div`
+margin-top: 170px;
+`;
 // ArticleCard---------------------------------------------------
 
 
