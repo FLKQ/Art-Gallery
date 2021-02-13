@@ -1,7 +1,8 @@
 import React from 'react'
 import {NavLogo, NavIcon} from './Navbar.elements';
 import FooterMenu from './FooterMenu';
-import {FooterSection, FooterContainer, FooterWrapper,LinksHolder} from './Footer.elements';
+import {FooterSection, FooterContainer, FooterWrapper,LinksHolder
+, MoreInfoHolder, FooterCopyright, FooterTerms, FooterPolicy,FooterFadedBottomTextHolder } from './Footer.elements';
 import StatementCard from './StatementCard';
 import {ImFacebook, ImTwitter} from 'react-icons/im';
 import {SiInstagram} from 'react-icons/si';
@@ -27,6 +28,13 @@ const Footer = () => {
                             <StatementCard icon={<SiInstagram/>} stretched="100"/>
                         </LinksHolder>
                     </FooterWrapper>
+                    <FooterFadedBottomTextHolder>
+                    <FooterCopyright>Copyright @ 2021 FLKQ.All Rights Reserved.</FooterCopyright>
+                    <MoreInfoHolder>
+                        <FooterTerms>Terms Of Use</FooterTerms>
+                     <FooterPolicy to = '/'>Privacy Policy</FooterPolicy>   
+                    </MoreInfoHolder>
+                    </FooterFadedBottomTextHolder>
                 </FooterContainer>
             </FooterSection>
             

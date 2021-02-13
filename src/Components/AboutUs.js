@@ -39,7 +39,7 @@ const AboutUs = () => {
                             <ColumnDigits digitTitle="420" digitSubTop="Education" digitSubBot="of the public"/>
                     </DigitsHolder>
                     <DigitsHolder>
-                            <ColumnDigits digitTitle="5000" digitSubTop="One's point" digitSubBot="of view"/>
+                            <ColumnDigits digitTitle="5,000" digitSubTop="One's point" digitSubBot="of view"/>
                     </DigitsHolder>
                     </RandomDiv>
                     <VideoPreviewHolder>
@@ -60,7 +60,7 @@ const AboutUs = () => {
                             of artistic,cultural,or scietific" icon={<FaTheaterMasks style={{width: '30px', height: '30px'}}/>}/>
                             </AbousUsStatementCenterer>
                         </AboutUsStatementHolder>
-                        <GetTicket title="Get Your Ticket" subtitle="Museums is to collect, preserve, interpret, and display objects of artistic, cultural" value="BUY TICKET"/>
+                        <GetTicket title="Get Your Ticket" subtitle="Museums is to collect, preserve, interpret, and display objects of artistic, cultural." value="BUY TICKET"/>
                         <Curators/>
             </AboutUsSection>
         </>

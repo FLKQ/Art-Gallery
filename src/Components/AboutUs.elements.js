@@ -9,6 +9,10 @@ export const AboutUsSection = styled.section`
 height: 415vh; //415
 max-height: 500vh;
 background-color: #fff;
+@media screen and (max-width:960px){
+    height: 800vh; //415
+max-height: 850vh;
+}
 
 `;
 
@@ -23,6 +27,10 @@ width: 100%;
 justify-content: space-between;
 padding-top: 15rem;
 align-items: center;
+
+@media screen and (max-width:960px){
+    flex-direction: column;
+}
 `;
 
 export const AboutUsImageHolder = styled.div`
@@ -39,6 +47,11 @@ padding: 30px;
 
 export const AboutUsColumnTextHolder = styled.div`
 text-align: center;
+
+
+@media screen and (max-width:960px){
+    margin-top: 8rem;
+}
 `;
 
 export const AboutUsTitle = styled.h1`
@@ -105,6 +118,10 @@ justify-content: space-between;
 margin: 0 auto;
 width: 70%;
 
+
+@media screen and (max-width:960px){
+    flex-direction: column;
+}
 `;
 
 export const VideoPreviewHolder = styled.div`
@@ -122,6 +139,11 @@ width: 1500px;
 height: 600px;
 object-fit: cover;
 border-radius: 5px;
+
+@media screen and (max-width:960px){
+    width: 800px;
+    height: 700px;
+}
 `;
 
 export const VideoPlayButton = styled.div`
@@ -151,10 +173,22 @@ height: 40vh;
 display: flex;
 
 justify-content: center;
+
+@media screen and (max-width:960px){
+    justify-content: center;
+    height: 90vh;
+}
+
 `;
 
 export const AbousUsStatementCenterer = styled.div`
 display: flex;
 justify-content: space-between;
 width: 78%;
+
+@media screen and (max-width:960px){
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 `;
