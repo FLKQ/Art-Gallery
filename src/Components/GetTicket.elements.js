@@ -69,11 +69,12 @@ width: 40%;
 }
 `;
 
-export const TicketButton = styled(Button)`
+export  const TicketButton = styled(Button)`
 padding: 20px 50px 20px 50px;
 font-size: 20px;
 background-color: #8a66ad;
 border: none;
+
 
 `;
 

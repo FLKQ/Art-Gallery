@@ -11,7 +11,7 @@ import StatementCard from './StatementCard';
 import {FaUniversity, FaPalette, FaTheaterMasks} from 'react-icons/fa';
 import GetTicket from './GetTicket';
 import Curators from './Curators';
-
+import {TicketButton} from './GetTicket.elements';
 const AboutUs = () => {
     return (
         <>
@@ -60,7 +60,8 @@ const AboutUs = () => {
                             of artistic,cultural,or scietific" icon={<FaTheaterMasks style={{width: '30px', height: '30px'}}/>}/>
                             </AbousUsStatementCenterer>
                         </AboutUsStatementHolder>
-                        <GetTicket title="Get Your Ticket" subtitle="Museums is to collect, preserve, interpret, and display objects of artistic, cultural." value="BUY TICKET"/>
+                        <GetTicket title="Get Your Ticket" subtitle="Museums is to collect, preserve, interpret, and display objects of artistic, cultural." value="BUY TICKET"
+                        clickeroriginal={<TicketButton style={{fontFamily: 'duera'}}>BUY TICKET</TicketButton>}/>
                         <Curators/>
             </AboutUsSection>
         </>

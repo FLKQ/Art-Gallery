@@ -3,9 +3,13 @@ import ArticlesMain from '../Images/ArticlesMain.jpg'
 
 
 export const ArticlesSection = styled.section`
-height: 160vh;
+height: 160vh; //160
 background-color: #fff;
 
+@media screen and (max-width:960px){
+ height: 600vh; //480
+    
+}
 `;
 
 export const ArticlesContainer = styled.div`
@@ -39,6 +43,12 @@ display:flex;
 justify-content: center;
 margin-top: 100px;
 
+@media screen and (max-width:960px){
+    display:flex;
+flex-direction: column;
+align-items: center;
+    
+}
 
 `;
 
@@ -47,6 +57,12 @@ display: flex;
 justify-content: space-between;
 width: 77%;
 
+@media screen and (max-width:960px){
+    display:flex;
+flex-direction: column;
+align-items: center;
+    
+}
 `;
 
 export const ArticlesImagesWrapper = styled.div`
@@ -56,6 +72,12 @@ height: 491px;
 background-image: url(${ArticlesMain});
 background-size: cover;
 border-radius: 5px;
+
+@media screen and (max-width:960px){
+width: 800px;
+height: 600px;
+margin-bottom: 50px;
+}
 `;
 
 export const ArticlesImageSide = styled.img`
@@ -65,6 +87,12 @@ object-fit: cover;
 border-radius: 5px;
 margin-left: 20px;
 
+@media screen and (max-width:960px){
+width: 800px;
+height: 600px;
+    
+}
+
 `;
 
 export const SideCardWrapper = styled.div`
@@ -73,10 +101,22 @@ export const SideCardWrapper = styled.div`
 
 export const SideCardHolder = styled.div`
 display: flex;
+
+@media screen and (max-width:960px){
+display:flex;
+flex-direction: column;
+
+    
+}
 `;
 
 export const NewsletterCardInput = styled.input`
 margin-left: 15rem;
+
+@media screen and (max-width:960px){
+ margin-left: 0;
+    
+}
 `;
 
 export const GetTicketWrapper = styled.div`
@@ -114,4 +154,19 @@ export const ImageInsideSubtext = styled.p`
 font-family: duera;
 font-size: 30px;
 width: ${({fullsize}) => (fullsize ? '100%' : '60%')};
+`;
+
+export const GetTicketButton = styled.button`
+padding: 20px 50px 20px 50px;
+font-size: 20px;
+background-color: #8a66ad;
+border: none;
+margin-right: 150px;
+border-radius: 5px;
+
+@media screen and (max-width:960px){
+  margin-right: 0;
+    
+}
+
 `;

@@ -7,11 +7,14 @@ import './HeaderElements.css';
 export const TestimonialsSection = styled.section`
 color: black;
 background-color: #e3f88f;
-height: 175vh;
+height: 100vh;
 //display: flex;
 //justify-content: center;
 
-
+@media screen and (max-width:960px){
+    height: 175vh;
+    
+}
 
 `;
 

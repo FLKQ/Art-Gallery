@@ -11,7 +11,9 @@ const GetTicket = props => {
                         <TicketSubTitle style={{width: props.fullsize + '%'}}>{props.subtitle}</TicketSubTitle>
                     </TextCenterer>
                         {props.field}
-                        <TicketButton style={{fontFamily: 'duera', marginRight: props.buttondistance + 'px'}}>{props.value}</TicketButton>
+                        {props.clickeroriginal}
+                        
+                        {props.clicker}
                         
                 </TicketHolder>
                 
