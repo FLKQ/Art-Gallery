@@ -7,7 +7,7 @@ height: 160vh; //160
 background-color: #fff;
 
 @media screen and (max-width:960px){
- height: 600vh; //480
+ height: 480vh; //480
     
 }
 `;

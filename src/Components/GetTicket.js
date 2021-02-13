@@ -7,7 +7,7 @@ const GetTicket = props => {
             <TicketContainer>
                 <TicketHolder style={{backgroundColor: props.colored, justifyContent: props.spacevalue}} >
                     <TextCenterer style={{color: props.textstyle, marginLeft: props.centererdistace + 'px'}}>
-                        <TicketTitle>{props.title}</TicketTitle>
+                        <TicketTitle style={{marginTop: props.titledistance + 'px'}}>{props.title}</TicketTitle>
                         <TicketSubTitle style={{width: props.fullsize + '%'}}>{props.subtitle}</TicketSubTitle>
                     </TextCenterer>
                         {props.field}

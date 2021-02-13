@@ -23,7 +23,7 @@ const Articles = () => {
     const ShowTicket = () => {
         if(ticket){
             return(              
-            <GetTicket clicker={<GetTicketButton style={{fontFamily: 'duera'}}>SUBSCRIBE</GetTicketButton>} fullsize="100" centererdistace="0" buttondistance="0" spacevalue="space-between" title="Newsletter" subtitle="Get your latest news about gallery." value="SUBSCRIBE" colored='#e3f88f'
+            <GetTicket titledistance="70" clicker={<GetTicketButton style={{fontFamily: 'duera', marginBottom: '70px'}}>SUBSCRIBE</GetTicketButton>} fullsize="100" centererdistace="0" buttondistance="0" spacevalue="space-between" title="Newsletter" subtitle="Get your latest news about gallery." value="SUBSCRIBE" colored='#e3f88f'
                         textstyle = "black"field={<NewsletterCardInput type="text" placeholder="Your Email" style={{padding: '20px 80px 20px 30px', borderRadius: '5px', border: 'none',
                         fontSize: "22px", color: 'black'}}/>}/> )
         }else{
