@@ -7,7 +7,7 @@ import './HeaderElements.css';
 export const TestimonialsSection = styled.section`
 color: black;
 background-color: #e3f88f;
-height: 100vh;
+height: 175vh;
 //display: flex;
 //justify-content: center;
 
@@ -22,13 +22,19 @@ justify-content: center;
 width: 100%; //77%
 
 
+
 `;
 
 export const TestimonialHolder = styled.div`
 margin-top: 150px;
 width: 77%;
 
-
+@media screen and (max-width:960px){
+    display:flex;
+flex-direction: column;
+align-items: center;
+    
+}
 
 
 `;
@@ -37,6 +43,13 @@ export const TestimonialsTextHolder = styled.div`
 display: flex;
 justify-content: space-between;
 margin-top: 25px;
+
+@media screen and (max-width:960px){
+    display:flex;
+flex-direction: column;
+align-items: center;
+    
+}
 `;
 
 export const TestimonialsTitle = styled.h1`
@@ -47,6 +60,12 @@ font-size: 70px;
 export const TestimonialsSubtext = styled.p`
 font-size: 22px;
 width: 30%;
+
+@media screen and (max-width:960px){
+margin-bottom: 40px;
+width: 25%;
+    
+}
 `;
 
 export const TestimonialsButton = styled(Button) `
@@ -63,6 +82,10 @@ display: flex;
 margin-top: 100px;
 justify-content: center;
 
+@media screen and (max-width:960px){
+ 
+    
+}
 `;
 
 export const RatingCardSpreader = styled.div`
@@ -70,6 +93,13 @@ display:flex;
 justify-content: space-between;
 width: 77%;
 
+@media screen and (max-width:960px){
+    display:flex;
+flex-direction: column;
+align-items: center;
+
+    
+}
 `;
 
 
@@ -80,6 +110,10 @@ padding: 0;
 width: 650px;
 height: 350px;
 
+@media screen and (max-width:960px){
+ margin-bottom: 50px;
+    
+}
 `;
 
 export const RatingCardHolder = styled.div`
