@@ -6,6 +6,10 @@ import './HeaderElements.css';
 export const WholeStatementHolder = styled.div`
 width: 20%;
 
+@media screen and (max-width:376px){
+ width: 60%;
+    
+}
 `;
 
 export const StatementCardContainer = styled.div`
@@ -24,6 +28,8 @@ margin-bottom: 25px;
 export const StatementIconMasks = styled(FaTheaterMasks)`
 width: 30px;
 height: 30px;
+
+
 
 
 `;

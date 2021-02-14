@@ -14,6 +14,11 @@ background-color: #fff;
 max-height: 850vh;
 }
 
+@media screen and (max-width:376px){
+    height: 920vh; //415
+max-height: 1000vh;
+}
+
 `;
 
 export const AboutUsContainer = styled(Container)`
@@ -43,6 +48,11 @@ height: 500px;
 object-fit: cover;
 border: 2px solid black;
 padding: 30px;
+
+@media screen and (max-width:376px){
+ width: 345px;
+    
+}
 `;
 
 export const AboutUsColumnTextHolder = styled.div`
@@ -144,6 +154,11 @@ border-radius: 5px;
     width: 800px;
     height: 700px;
 }
+
+@media screen and (max-width:376px){
+ width: 345px;
+    
+}
 `;
 
 export const VideoPlayButton = styled.div`
@@ -178,6 +193,10 @@ justify-content: center;
     justify-content: center;
     height: 90vh;
 }
+@media screen and (max-width:376px){
+ height: 120vh;
+   
+}
 
 `;
 
@@ -188,7 +207,12 @@ width: 78%;
 
 @media screen and (max-width:960px){
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     width: 100%;
+}
+
+@media screen and (max-width:376px){
+ justify-content: space-around;
+    
 }
 `;

@@ -10,6 +10,11 @@ background-color: #fff;
  height: 480vh; //480
     
 }
+
+@media screen and (max-width:376px){
+ height: 540vh; //480
+    
+}
 `;
 
 export const ArticlesContainer = styled.div`
@@ -31,11 +36,18 @@ font-size: 70px;
 margin-top: 100px;
 margin-bottom: 50px;
 
+
+
 `;
 
 export const ArticlesSubtext = styled.p`
 
 font-size: 22px;
+
+@media screen and (max-width:376px){
+  width:80%;
+    
+}
 `;
 
 export const ImageContainer = styled.div`
@@ -78,6 +90,12 @@ width: 800px;
 height: 600px;
 margin-bottom: 50px;
 }
+
+@media screen and (max-width:376px){
+width: 320px;
+height: 600px;
+background-size: fill;
+}
 `;
 
 export const ArticlesImageSide = styled.img`
@@ -93,6 +111,13 @@ height: 600px;
     
 }
 
+@media screen and (max-width:376px){
+width: 320px;
+height: 600px;
+margin-left:0;
+    
+}
+
 `;
 
 export const SideCardWrapper = styled.div`
@@ -105,6 +130,7 @@ display: flex;
 @media screen and (max-width:960px){
 display:flex;
 flex-direction: column;
+margin-bottom: 30px;
 
     
 }
@@ -115,6 +141,11 @@ margin-left: 15rem;
 
 @media screen and (max-width:960px){
  margin-left: 0;
+ padding: 20px 80px 20px 30px;   
+}
+
+@media screen and (max-width:376px){
+  padding: 20px 15px 20px 15px;
     
 }
 `;

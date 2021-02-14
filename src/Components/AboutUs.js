@@ -54,10 +54,9 @@ const AboutUs = () => {
                         <AbousUsStatementCenterer>
                         <StatementCard StatementTitle="Collect Art" StatementSubTitle="Modern Museums is to collect, preserve,interpret, and display objects
                             of artistic,cultural,or scietific" icon={<FaUniversity style={{width: '30px', height: '30px'}}/>}/>
-                        <StatementCard StatementTitle="Collect Art" StatementSubTitle="Modern Museums is to collect, preserve,interpret, and display objects
-                            of artistic,cultural,or scietific" icon={<FaPalette style={{width: '30px', height: '30px'}}/>}/>
-                        <StatementCard StatementTitle="Collect Art" StatementSubTitle="Modern Museums is to collect, preserve,interpret, and display objects
-                            of artistic,cultural,or scietific" icon={<FaTheaterMasks style={{width: '30px', height: '30px'}}/>}/>
+                        <StatementCard StatementTitle="Preserve Gallery" StatementSubTitle="Preserve,interpret,and display objects of artistic,cultural,
+                        or scientific significance fro the education." icon={<FaPalette style={{width: '30px', height: '30px'}}/>}/>
+                        <StatementCard StatementTitle="Interpret Exibition" StatementSubTitle="Scientific significance for the education of the public.From a visitor or community perspective." icon={<FaTheaterMasks style={{width: '30px', height: '30px'}}/>}/>
                             </AbousUsStatementCenterer>
                         </AboutUsStatementHolder>
                         <GetTicket title="Get Your Ticket" subtitle="Museums is to collect, preserve, interpret, and display objects of artistic, cultural." value="BUY TICKET"

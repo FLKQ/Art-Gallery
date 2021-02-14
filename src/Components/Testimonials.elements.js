@@ -16,6 +16,11 @@ height: 100vh;
     
 }
 
+@media screen and (max-width:376px){
+    height: 255vh;
+    
+}
+
 `;
 
 
@@ -69,6 +74,13 @@ margin-bottom: 40px;
 width: 25%;
     
 }
+
+
+@media screen and (max-width:960px){
+margin-bottom: 40px;
+width: 80%;
+    
+}
 `;
 
 export const TestimonialsButton = styled(Button) `
@@ -117,6 +129,14 @@ height: 350px;
  margin-bottom: 50px;
     
 }
+
+@media screen and (max-width:376px){
+ width: 320px;
+ height: 650px;
+    
+}
+
+
 `;
 
 export const RatingCardHolder = styled.div`
@@ -128,6 +148,12 @@ background-color: #fff;
 width: 650px;
 height: 350px;
 padding-left: 50px;
+
+@media screen and (max-width:376px){
+ width: 320px;
+ height: 650px;
+    
+}
 
 `;
 
@@ -141,6 +167,8 @@ export const RatingComment = styled.p`
 font-size: 30px;
 width: 80%;
 margin-bottom: 25px;
+
+
 `;
 
 export const RatingPersonHolder = styled.div`
@@ -153,10 +181,20 @@ width: 60px;
 height: 60px;
 object-fit: cover;
 border-radius: 50%;
+
+@media screen and (max-width:376px){
+ margin-top:20px;
+    
+}
 `;
 
 export const RatingPersonInfoHolder = styled.div`
 margin-left: 20px;
+
+@media screen and (max-width:376px){
+ margin-top:20px;
+    
+}
 `;
 
 export const RatingPersonName = styled.h1`

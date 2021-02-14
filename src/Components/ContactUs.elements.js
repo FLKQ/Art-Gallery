@@ -37,5 +37,13 @@ export const ContactUsMap = styled.img`
 height: 890px;
 width: 1000px;
 object-fit: cover;
+
+@media screen and (max-width:960px){
+width: 300px;
+height: 500px;
+align-self: center;
+margin-right: 50px;
+    
+}
 `;
 

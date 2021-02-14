@@ -67,6 +67,11 @@ width: 60%;
 width: 40%;
     
 }
+
+@media screen and (max-width:376px){
+width: 70%;
+    
+}
 `;
 
 export  const TicketButton = styled(Button)`
