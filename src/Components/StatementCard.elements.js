@@ -62,6 +62,11 @@ align-self: center;
 margin-left: 15px;
 font-family: duera;
 font-size: 32px;
+
+@media screen and (max-width: 376px){
+    width: 100%;
+    
+}
 `;
 
 export const StatementTitleBottom = styled.h1`
@@ -79,5 +84,7 @@ margin-top: 7px;
 export const StatementSubTitle = styled.p`
 font-size: 20px;
 color: #a5a6a6;
+
+
 `;
 

@@ -6,6 +6,8 @@ export const CuratorsContainer = styled(Container)`
 height: 90vh;
 display:flex;
 justify-content: center;
+
+
 `;
 
 export const CuratorsHolder = styled.div`
