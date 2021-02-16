@@ -94,7 +94,7 @@ margin-bottom: 40px;
 export const AboutUsButton = styled(Button)`
 padding: 10px 60px 6px 60px;
 font-size: 20px;
-background-color: #8a66ad;
+background-color: #b895fa;
 
 
 `;
@@ -167,7 +167,7 @@ display: flex;
 width: 300px;
 height: 300px;
 border-radius: 50%;
-background-color: #8a66ad;
+background-color: #b895fa;
 align-items: center;
 justify-content: center;
 `;

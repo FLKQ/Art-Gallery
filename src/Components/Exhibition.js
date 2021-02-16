@@ -25,7 +25,7 @@ const Exhibition = () => {
 
     function handleBorder() {
         if(color){
-            return <NavigationLinks to = '/' style={{borderBottom: '2px solid #8a66ad'}} onClick={handleColor}>See All</NavigationLinks>
+            return <NavigationLinks to = '/' style={{borderBottom: '2px solid #b895fa'}} onClick={handleColor}>See All</NavigationLinks>
         }else
              return <NavigationLinks to='/' onClick={handleColor}>See All</NavigationLinks>
     }

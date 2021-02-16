@@ -7,7 +7,7 @@ background-color: #121212;
 color: white;
 
 @media screen and (max-width: 376px){
-    height: 185vh;
+    height: 172vh;
 }
 `;
 
@@ -83,7 +83,7 @@ margin-right: 50px;
 export const ContactBuyTicketButton = styled(Button)`
 padding: 20px 50px 20px 50px;
 font-size: 20px;
-background-color: #8a66ad;
+background-color: #b895fa;
 border: none;
 margin-top: 20px;
 

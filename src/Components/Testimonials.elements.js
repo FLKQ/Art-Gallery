@@ -159,7 +159,7 @@ padding-left: 50px;
 
 
 export const RatingHolder = styled.div`
-color: #8a66ad;
+color: #b895fa;
 margin-bottom: 25px;
 `;
 

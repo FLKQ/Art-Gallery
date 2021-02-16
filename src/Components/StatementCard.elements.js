@@ -83,7 +83,7 @@ margin-top: 7px;
 
 export const StatementSubTitle = styled.p`
 font-size: 20px;
-color: #a5a6a6;
+color: #7c7b7d;
 
 
 `;

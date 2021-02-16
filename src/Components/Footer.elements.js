@@ -7,6 +7,10 @@ background-color: #121212;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media screen and (max-width: 376px){
+    height: 80vh;
+}
 `;
 
 export const FooterContainer = styled.div`
@@ -20,10 +24,25 @@ export const FooterWrapper = styled.div`
 display: flex;
 justify-content: space-between;
 height: 300px;
-border-bottom: 2px solid #444545;
+border-bottom: 2px solid #7c7b7d;
+
+@media screen and (max-width: 960px){
+    padding-top: 60px;
+}
 
 
+@media screen and (max-width: 376px){
+    width:100%;
+    height: 500px;
+}
 
+
+@media screen and (max-width: 376px){
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    
+} 
 
 
 `;
@@ -46,23 +65,44 @@ color: white;
 export const LinksHolder = styled.div`
 display: flex;
 flex-direction: row;
+
+@media screen and (max-width: 376px){
+    margin-top: 40px;
+    width:50%;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
 `;
 
 export const FooterCopyright = styled.h1 `
-color: #444545;
+color: #7c7b7d;
 font-size: 15px;
+
+@media screen and (max-width: 376px){
+    margin-top: 20px;
+}
 `;
 
 export const FooterFadedBottomTextHolder = styled.div`
 display: flex;
 justify-content: space-between;
 margin-top: 40px;
+
+@media screen and (max-width: 376px){
+    display: unset;
+}
 `;
 
 export const MoreInfoHolder = styled.div`
 display:flex;
 
+@media screen and (max-width: 376px){
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    margin-top: 25px;
 
+}
 `;
 
 export const FooterTerms = styled(Link)`
@@ -76,4 +116,50 @@ export const FooterPolicy = styled(Link)`
 text-decoration: none;
 color: #fff;
 font-size: 15px;
+`;
+
+export const FooterMenuWrapper = styled.div`
+display:flex;
+justify-content: space-between;
+width: 30%;
+
+@media screen and (max-width: 960px){
+    width: 34%;
+}
+
+@media screen and (max-width: 376px){
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+
+}
+`;
+
+export const FooterLogo = styled(Link)`
+color: #fff;
+justify-self: flex-start;
+cursor: pointer;
+text-decoration: none;
+font-size: 3rem;
+display: flex;
+margin-left: 40px;
+font-family: duera;
+
+&:hover{
+        color: #cc99ff;
+        transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 376px){
+    width:100%;
+    
+    
+    
+
+}
+`;
+
+export const FooterIcon = styled.h1`
+
 `;

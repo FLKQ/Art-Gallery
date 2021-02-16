@@ -75,7 +75,7 @@ justify-content: space-between;
 width: 40%;
 font-size: 20px;
 margin-top: 45px;
-border-bottom: 2px solid #a5a6a6;
+border-bottom: 2px solid #7c7b7d;
 
 
 font-family: "Times New Roman";
@@ -103,7 +103,7 @@ margin-bottom: 20px;
 
 export const NavigationLinks = styled(Link)`
 text-decoration: none;
-color : #a5a6a6;
+color : #7c7b7d;
 cursor: pointer;
 
 `;

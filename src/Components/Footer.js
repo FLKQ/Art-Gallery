@@ -2,7 +2,8 @@ import React from 'react'
 import {NavLogo, NavIcon} from './Navbar.elements';
 import FooterMenu from './FooterMenu';
 import {FooterSection, FooterContainer, FooterWrapper,LinksHolder
-, MoreInfoHolder, FooterCopyright, FooterTerms, FooterPolicy,FooterFadedBottomTextHolder } from './Footer.elements';
+, MoreInfoHolder, FooterCopyright, FooterTerms, FooterPolicy,FooterFadedBottomTextHolder, FooterMenuWrapper
+,FooterLogo,FooterIcon } from './Footer.elements';
 import StatementCard from './StatementCard';
 import {ImFacebook, ImTwitter} from 'react-icons/im';
 import {SiInstagram} from 'react-icons/si';
@@ -15,13 +16,15 @@ const Footer = () => {
             <FooterSection>
                 <FooterContainer>
                     <FooterWrapper>
-                        <NavLogo>
-                            <NavIcon>GAL</NavIcon>
-                        </NavLogo>
+                        <FooterLogo>
+                            <FooterIcon>GAL</FooterIcon>
+                        </FooterLogo>
+                        <FooterMenuWrapper>
                         <FooterMenu title="Menu" second="About" third="Gallery"
                         fourth="Blog" fifth="Contact" />
                         <FooterMenu title="Explore" second="Exhibition" third="Events"
                         fourth="Curators" fifth="Testimonial" />
+                        </FooterMenuWrapper>
                         <LinksHolder>
                             <StatementCard style={{backgroundColor: '#8a66ad'}} icon={<ImFacebook/>} stretched="100"/>
                             <StatementCard icon={<ImTwitter/>} stretched="100"/>

@@ -173,11 +173,11 @@ margin-top: 20px;
 `;
 
 export const ImageInsideType = styled.h1`
-color: #8a66ad;
+color: #b895fa;
 `;
 
 export const ImageInsideDate = styled.p`
-color: #a5a6a6;
+color: #7c7b7d;
 margin-left: 20px;
 `;
 
@@ -190,7 +190,7 @@ width: ${({fullsize}) => (fullsize ? '100%' : '60%')};
 export const GetTicketButton = styled.button`
 padding: 20px 50px 20px 50px;
 font-size: 20px;
-background-color: #8a66ad;
+background-color: #b895fa;
 border: none;
 margin-right: 150px;
 border-radius: 5px;

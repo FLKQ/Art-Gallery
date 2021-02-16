@@ -28,7 +28,7 @@ export const CardTextHolder = styled.div`
 
 export const CardType = styled.h2 `
 margin: 20px 0px 20px 0px;
-color: #b58ff8
+color: #b895fa;
 
 `;
 
@@ -42,7 +42,7 @@ width: 90%;
 
 export const CardDateHolder = styled.div`
 display: flex;
-color: #a5a6a6;
+color: #7c7b7d;
 `;
 
 export const CardDateIcon = styled(FaCalendarAlt) `

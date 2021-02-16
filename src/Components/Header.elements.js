@@ -37,9 +37,12 @@ font-family: Duera;
 max-height: 185px;
 z-index: 1;
 
-@media screen and (max-width: 812px){
-    font-size: 100px;
+
+
+@media screen and (max-width: 960px){
+    font-size: 125px;
     max-height: 100px;
+    margin-bottom: 25px;
 }
 
 
@@ -52,8 +55,8 @@ font-family: Duera;
 margin-bottom: 40px;
 z-index: 1;
 
-@media screen and (max-width: 812px){
-    font-size: 100px;
+@media screen and (max-width: 960px){
+    font-size: 140px;
     margin-bottom: 25px;
 }
 `;
@@ -63,8 +66,8 @@ export const HeaderButtonHolder = styled.div`
 `;
 
 export const HeaderButton = styled(Button)`
-background-color: #8a66ad;
-border: 1px solid #8a66ad;
+background-color: #b895fa;
+border: 1px solid #b895fa;
 padding: 10px 60px;
 color : black;
 font-size: 25px;
@@ -115,6 +118,14 @@ z-index: 0;
 left: 30.5%;
 top: 33%;
 
+@media screen and (max-width: 960px){
+    width: 100px;
+    height: 150px;
+    top: 41%;
+    left: 24%;
+
+}
+
 `;
 
 export const RightToTitleImage = styled.div`
@@ -127,6 +138,12 @@ z-index: 0;
 left: 60%;
 top: 60%;
 
+@media screen and (max-width: 960px){
+    height: 160px;
+    width: 150px;
+    top:78%;
+}
+
 `;
 
 export const LeftCenterImage = styled.div`
@@ -137,6 +154,11 @@ height: 320px;
 z-index: 0;
 left: 0;
 top: 15%;
+
+@media screen and (max-width: 960px){
+    width: 150px;
+    height: 250px;
+}
 `;
 
 export const RightCenterImage = styled.div`
@@ -148,6 +170,11 @@ z-index: 0;
 right: 0;
 top: 25%;
 background-size: cover;
+
+@media screen and (max-width: 960px){
+    height: 150px;
+    width: 70px;
+}
 
 `;
 
@@ -248,6 +275,12 @@ border-top-right-radius: 50px;
 border-top-left-radius: 50px;
 bottom: 17px;
 right: 10%;
+
+@media screen and (max-width: 960px){
+    height: 60px;
+    width: 50px;
+    bottom: 0;
+}
 `;
 
 

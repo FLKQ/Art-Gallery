@@ -91,7 +91,7 @@ font-family: duera;
 
 export const VerticalCardDay = styled.p`
 font-size: 22px;
-color: #a5a6a6;
+color: #7c7b7d;
 `
 
 export const ColumnTextHolder = styled.div`
@@ -125,7 +125,7 @@ object-fit: cover;
 
 export const ClockIcon = styled(FaClock)`
 margin-right: 10px;
-color: #a5a6a6;
+color: #7c7b7d;
 margin-top: 5px;
 `;
 
@@ -141,7 +141,7 @@ export const ReadMoreButton = styled(Button)`
 padding: 10px 60px 6px 60px;
 font-size: 20px;
 margin-left: ${({noMargin}) => (noMargin ? "0px" : "23rem")};
-background-color: ${({standart}) => (standart ? "#8a66ad" : "#fff")};
+background-color: ${({standart}) => (standart ? "#b895fa" : "#fff")};
 margin-top: ${({hugeTopMargin}) => (hugeTopMargin ? "5rem" : "0px")};
 
 @media screen and (max-width: 960px){
