@@ -10,6 +10,11 @@ top: 60%;
    left: -7%;
 }
 
+@media screen and (max-width: 376px){
+   left: -18%;
+}
+
+
 `;
 
 export const Circle = styled.div`

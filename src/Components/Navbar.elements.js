@@ -55,13 +55,13 @@ display:none;
 @media screen and (max-width: 960px){
         display: block;
         position: absolute;
-        right: 0;
+        right: 0px;
         top: 0;
         font-size: 1.5rem;
         border: 1px solid #606060;
         padding: 10px 15px 7px 15px;
         cursor: pointer;
-        margin-right: 20px;
+        margin-right: 40px;
         margin-top: 12px;
         border-radius: 5px;
         
@@ -85,7 +85,7 @@ top: 80px;
 left: ${({click}) => (click ? 0 : '-100%')};;
 opacity: 1;
 transition: all 0.5s ease;
-background: #000000;
+background: #121212;
         
 }
 `;

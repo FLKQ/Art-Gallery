@@ -92,7 +92,19 @@ export const BottomCircle = styled.div`
      border-top-right-radius: 350px;
      border-top-left-radius: 350px;
     
-     
+     @media screen and (max-width: 960px){
+    width: 250px;
+    height: 130px;
+    left: -10%;
+    bottom: 10px;
+}  
+
+@media screen and (max-width: 376px){
+    width: 230px;
+    height: 110px;
+    left: -18%;
+    bottom: 10px;
+} 
     
 `;
 
@@ -104,8 +116,24 @@ export const BottomCircleInner = styled.div`
  border-top-left-radius: 350px;
  background-color: #121212;
  bottom: 17px;
- left: 18%;
+ left: 17%;
  z-index: 100;
+
+ @media screen and (max-width: 960px){
+    width: 180px;
+    height: 85px;
+    left: -7%;
+    bottom: 10px;
+
+}
+
+@media screen and (max-width: 376px){
+    width: 170px;
+    height: 80px;
+    left: -11%;
+    bottom: 10px;
+
+}
 `;
 
 export const LeftToTitleImage = styled.div`
@@ -119,6 +147,14 @@ left: 30.5%;
 top: 33%;
 
 @media screen and (max-width: 960px){
+    width: 100px;
+    height: 150px;
+    top: 41%;
+    left: 24%;
+
+}
+
+@media screen and (max-width: 376px){
     width: 100px;
     height: 150px;
     top: 41%;
@@ -144,6 +180,12 @@ top: 60%;
     top:78%;
 }
 
+@media screen and (max-width: 376px){
+    height: 115px;
+    width: 110px;
+    top:78%;
+}
+
 `;
 
 export const LeftCenterImage = styled.div`
@@ -158,6 +200,11 @@ top: 15%;
 @media screen and (max-width: 960px){
     width: 150px;
     height: 250px;
+}
+
+@media screen and (max-width: 376px){
+    width: 90px;
+    height: 180px;
 }
 `;
 
@@ -190,6 +237,17 @@ export const TopCircle = styled.div`
      z-index: 999;
      background-size: cover;
     
+ @media screen and (max-width: 960px){
+    width: 250px;
+    height: 130px;
+    left: 50%;
+}
+
+@media screen and (max-width: 376px){
+    display: none;
+
+}
+
      
     
 `;
@@ -204,6 +262,17 @@ export const TopCircleInner = styled.div`
 top: 0;
  left: 66%;
  z-index: 999;
+
+ @media screen and (max-width: 960px){
+    width: 180px;
+    height: 80px;
+    left: 54%;
+
+}
+@media screen and (max-width: 376px){
+    display: none;
+
+}
 `;
 
 export const TopBorderOuter = styled.div`
@@ -217,6 +286,10 @@ width: 200px;
 top: -20px;
  left: 20%;
  z-index: 999;
+
+ @media screen and (max-width: 960px){
+    display: none;
+}
  
 
 `;
@@ -233,7 +306,9 @@ top: 0;
  left: 21%;
  z-index: 999;
  
-
+ @media screen and (max-width: 960px){
+    display: none;
+}
 `;
 
 
@@ -247,7 +322,9 @@ top: 0px;
  left: 20%;
  z-index: 999;
  
-
+ @media screen and (max-width: 960px){
+    display: none;
+}
 `;
 
 export const TopBorderInnerBox = styled.div`
@@ -261,7 +338,9 @@ top: 146.8px;
  left: 25.67%;
  z-index: 999;
  
-
+ @media screen and (max-width: 960px){
+    display: none;
+}
 `;
 
 export const BottomBorder = styled.div`
@@ -279,7 +358,7 @@ right: 10%;
 @media screen and (max-width: 960px){
     height: 60px;
     width: 50px;
-    bottom: 0;
+    bottom: 10px;
 }
 `;
 
