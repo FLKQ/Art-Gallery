@@ -27,6 +27,13 @@ const Gallery = () => {
     useEffect(() => {
         gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
         gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 1, ease: Power3.easeOut});
+        gsap.fromTo(FirstImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 1.5, ease: Power3.easeOut});
+        gsap.fromTo(SecondImageAnimation, {y: -40 , opacity: 0}, {y: 0, opacity: 1, duration: 2,delay: 2.5, ease: Power3.easeOut});
+        gsap.fromTo(ThirdImageAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 2.1, ease: Power3.easeOut});
+        gsap.fromTo(FourthImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 1.9, ease: Power3.easeOut});
+        gsap.fromTo(FifthImageAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2,delay: 2.3, ease: Power3.easeOut});
+        gsap.fromTo(SixthImageAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 1.7, ease: Power3.easeOut});
+        gsap.fromTo(ButtonAnimation, {scaleX: 1.5, opacity: 0}, {scaleX: 1, opacity: 1, duration: 2.1, delay: 3 , ease: Power3.easeOut})
     }, [])
 
 
@@ -58,7 +65,7 @@ const Gallery = () => {
                                 </div>
                             </CardHolder>
                             <ButtonHolder>
-                                <ExploreMoreButton style={{fontFamily: 'duera'}}>EXPLORE MORE</ExploreMoreButton>
+                                <ExploreMoreButton style={{fontFamily: 'duera'}} ref={el => {ButtonAnimation = el}}>EXPLORE MORE</ExploreMoreButton>
                             </ButtonHolder>
                     </GalleryContainer>
             </GallerySection>
