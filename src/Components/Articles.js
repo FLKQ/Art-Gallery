@@ -15,6 +15,7 @@ const Articles = () => {
     let SubtitleAnimation = useRef(null);
     let SubtitleBotAnimation = useRef(null);
      let ArticleCardAnimation = useRef(null);
+     let ArticleTicketAnimation = useRef(null);
 
     const[ticket,setTicket] = useState(false);
 
@@ -49,6 +50,7 @@ const Articles = () => {
         gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
         gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.9, ease: Power3.easeOut});
         gsap.fromTo(ArticleCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
+        gsap.fromTo(ArticleTicketAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1.5, ease: Power3.easeOut});
 
     },[]);
 
@@ -73,7 +75,7 @@ window.addEventListener("resize", ChooseTicket)
                             <ArticlesSideCard/>
                         </ImageContainerCenterer>
                     </ImageContainer>
-                    <GetTicketWrapper>
+                    <GetTicketWrapper ref={el => {ArticleTicketAnimation = el}}>
                         {ShowTicket()}
                     </GetTicketWrapper>
             </ArticlesSection>
