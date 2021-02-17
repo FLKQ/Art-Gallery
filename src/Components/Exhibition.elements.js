@@ -144,4 +144,28 @@ font-size: 20px;
 
 `;
 
+export const FirstCard = styled.div`
+
+`;
+
+export const SecondCard = styled.div`
+
+`;
+
+export const ThirdCard = styled.div`
+
+`;
+
+export const FourthCard = styled.div`
+
+`;
+
+export const FifthCard = styled.div`
+
+`;
+
+export const SixthCard = styled.div`
+
+`;
+
 

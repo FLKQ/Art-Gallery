@@ -150,5 +150,15 @@ margin-top: ${({hugeTopMargin}) => (hugeTopMargin ? "5rem" : "0px")};
 }
 `;
 
+export const CardOne = styled.div`
+
+`;
+export const CardTwo = styled.div`
+
+`;
+export const CardThree = styled.div`
+
+`;
+
 
 
