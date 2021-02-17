@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import {ColumnDigitsHolder, DigitTitle, DigitSubtitle} from './AboutUs.elements';
-import {gsap, Power3} from 'gsap';;
+import {gsap, Power3} from 'gsap';
 
 
 function ColumnDigits(props) {
