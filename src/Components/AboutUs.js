@@ -31,6 +31,8 @@ const AboutUs = () => {
     let IconAnimation = useRef(null);
     let IconTitleAnimation = useRef(null);
     let IconSubtitleAnimation = useRef(null);
+    let CardTicketAnimation = useRef(null);
+
     
 
 
@@ -44,6 +46,7 @@ const AboutUs = () => {
         gsap.fromTo(ImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
         gsap.fromTo(VideoAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
         gsap.fromTo(VideoButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1.7, ease: Power3.easeOut});
+        gsap.fromTo(CardTicketAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1, ease: Power3.easeOut});
 
     }, [])
 
@@ -94,8 +97,10 @@ const AboutUs = () => {
                         <StatementCard StatementTitle="Interpret Exibition" StatementSubTitle="Scientific significance for the education of the public.From a visitor or community perspective." icon={<FaTheaterMasks style={{width: '30px', height: '30px'}}/>}/>
                             </AbousUsStatementCenterer>
                         </AboutUsStatementHolder>
+                        <div ref={el => {CardTicketAnimation = el}}>
                         <GetTicket title="Get Your Ticket" subtitle="Museums is to collect, preserve, interpret, and display objects of artistic, cultural." value="BUY TICKET"
                         clickeroriginal={<TicketButton style={{fontFamily: 'duera'}}>BUY TICKET</TicketButton>}/>
+                        </div>
                         <Curators/>
             </AboutUsSection>
         </>
