@@ -1,14 +1,20 @@
-import {React, useState, useEffect} from 'react'
+import {React, useState, useEffect, useRef} from 'react'
 import {ArticlesSection, ArticlesImagesWrapper, ArticlesContainer,
     ImageContainerCenterer, ArticlesTitle, GetTicketWrapper, ArticlesSubtext, NewsletterCardInput, ArticlesWrapper,ImageContainer,GetTicketButton} from './Articles.elements';
 import ArticlesCard from './ArticlesCard';
 import ArticlesSideCard from './ArticlesSideCard';
 import GetTicket from './GetTicket';
 import {TicketButton} from './GetTicket.elements';
+import {gsap, Power3} from 'gsap';
 
 
 
 const Articles = () => {
+
+    let TitleAnimation = useRef(null);
+    let SubtitleAnimation = useRef(null);
+    let SubtitleBotAnimation = useRef(null);
+     let ArticleCardAnimation = useRef(null);
 
     const[ticket,setTicket] = useState(false);
 
@@ -37,7 +43,13 @@ const Articles = () => {
     useEffect(() => {
         ChooseTicket();
         ShowTicket();
-        console.log(ticket)
+        console.log(ticket);
+
+        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
+        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
+        gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.9, ease: Power3.easeOut});
+        gsap.fromTo(ArticleCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
+
     },[]);
 
 window.addEventListener("resize", ChooseTicket)
@@ -47,14 +59,14 @@ window.addEventListener("resize", ChooseTicket)
             <ArticlesSection>
                 <ArticlesContainer>
                     <ArticlesWrapper>
-                        <ArticlesTitle>Latest Articles</ArticlesTitle>
-                        <ArticlesSubtext>Significance for the education of the public. From</ArticlesSubtext>
-                        <ArticlesSubtext>a visitor or community perspective.</ArticlesSubtext>
+                        <ArticlesTitle ref={el => {TitleAnimation = el}}>Latest Articles</ArticlesTitle>
+                        <ArticlesSubtext ref={el => {SubtitleAnimation = el}}>Significance for the education of the public. From</ArticlesSubtext>
+                        <ArticlesSubtext ref={el => {SubtitleBotAnimation = el}}>a visitor or community perspective.</ArticlesSubtext>
                     </ArticlesWrapper>
                 </ArticlesContainer>
                 <ImageContainer>
                     <ImageContainerCenterer>
-                        <ArticlesImagesWrapper>
+                        <ArticlesImagesWrapper ref={el => {ArticleCardAnimation = el}}>
                             <ArticlesCard type="Exhibitions" date="14 Jan 2021" subtext="An art gallery is a place where
                             one can see and buy" inside="absolute"/>
                         </ArticlesImagesWrapper>
