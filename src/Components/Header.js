@@ -21,7 +21,7 @@ const Header = () => {
 
         gsap.fromTo(TitleTopAnimation, {y: -20 , opacity: 0}, {y: 0, opacity: 1, duration: 2.5 , delay: 1.5, ease: Power3.easeOut})
         gsap.fromTo(TitleBottomAnimation, {y: 20 , opacity: 0}, {y: 0, opacity: 1, duration: 2.5 , delay: 1.5, ease: Power3.easeOut})
-        gsap.fromTo(ButtonAnimation, {scaleX: 2, opacity: 0}, {scaleX: 1, opacity: 1, duration: 2.1, delay: 2.5 , ease: Power3.easeOut})
+        gsap.fromTo(ButtonAnimation, {y:20, opacity: 0}, {y:0, opacity: 1, duration: 1.5, delay: 2.5 , ease: Power3.easeOut})
         gsap.fromTo(LeftCenterImageAnimation, {x: -20, opacity: 0}, {x: 0, opacity: 1, duration: 0.5, delay: 4 , ease: Power3.easeOut})
         gsap.fromTo(RightCenterImageAnimation, {x: 20, opacity: 0}, {x: 0, opacity: 1, duration: 0.5, delay: 4.2 , ease: Power3.easeOut})
         gsap.fromTo(LeftToTitleImageAnimation, {x: 20, opacity: 0}, {x: 0, opacity: 1, duration: 0.5, delay: 4.4 , ease: Power3.easeOut})

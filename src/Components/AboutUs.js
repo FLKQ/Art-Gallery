@@ -13,8 +13,10 @@ import GetTicket from './GetTicket';
 import Curators from './Curators';
 import {TicketButton} from './GetTicket.elements';
 import {gsap, Power3} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const AboutUs = () => {
+    gsap.registerPlugin(ScrollTrigger);
 
     let TitleAnimation = useRef(null);
     let TitleMidAnimation = useRef(null);
@@ -37,16 +39,26 @@ const AboutUs = () => {
 
 
     useEffect(() => {
-        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
-        gsap.fromTo(TitleMidAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
-        gsap.fromTo(TitleBotAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
-        gsap.fromTo(ButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1.2, ease: Power3.easeOut});
-        gsap.fromTo(ImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
-        gsap.fromTo(VideoAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
-        gsap.fromTo(VideoButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1.7, ease: Power3.easeOut});
-        gsap.fromTo(CardTicketAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1, ease: Power3.easeOut});
+        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(TitleMidAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.2, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleMidAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(TitleBotAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleBotAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleBotAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(ButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 0.5, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=150',toggleActions:'play none none none'}});
+        gsap.fromTo(ImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.2, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ImageAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(VideoAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: VideoAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(VideoButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 0.7, ease: Power3.easeOut,
+            scrollTrigger: {trigger: VideoButtonAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(CardTicketAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: CardTicketAnimation, start: 'top center',toggleActions:'play none none none'}});
 
     }, [])
 

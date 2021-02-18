@@ -145,6 +145,7 @@ position: absolute;
 z-index: 0;
 left: 30.5%;
 top: 33%;
+overflow: hidden; // eto esli 4e ybratb
 
 @media screen and (max-width: 960px){
     width: 100px;

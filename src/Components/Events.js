@@ -7,8 +7,10 @@ import OilDrawing from '../Images/twoIn.jpg';
 import UnknownButCool from '../Images/threeIn.jpg';
 import Circle from './Сircle';
 import {gsap,Power3} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const Events = () => {
+    gsap.registerPlugin(ScrollTrigger);
 
     let TitleAnimation = useRef(null);
     let TitleBottomAnimation = useRef(null);
@@ -17,22 +19,30 @@ const Events = () => {
     let CardSecondAnimation = useRef(null);
     let CardThirdAnimation = useRef(null);
     let ButtonAnimation = useRef(null);
+    let TriggerAnimation = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo(CardFirstAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 1, duration: 3, ease: Power3.easeOut});
-        gsap.fromTo(CardSecondAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 1.5, duration: 3, ease: Power3.easeOut});
-        gsap.fromTo(CardThirdAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 2, duration: 3, ease: Power3.easeOut});
-        gsap.fromTo(TitleAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 1, duration: 3, ease: Power3.easeOut});
-        gsap.fromTo(TitleBottomAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 1.5, duration: 3, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 2, duration: 3, ease: Power3.easeOut});
-        gsap.fromTo(ButtonAnimation, {scaleX: 1.5 , opacity: 0}, {scaleX: 1, opacity: 1, delay: 2.5, duration: 3, ease: Power3.easeOut});
+        gsap.fromTo(CardFirstAnimation, {x: -80 , opacity: 0, scrub: true}, {x: 0, opacity: 1, delay: 0, duration: 1.5, ease: Power3.easeOut,
+             scrollTrigger: {trigger: CardFirstAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(CardSecondAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 0, duration: 1.5, ease: Power3.easeOut,
+            scrollTrigger: {trigger: CardSecondAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(CardThirdAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 0, duration: 1.5, ease: Power3.easeOut,
+            scrollTrigger: {trigger: CardThirdAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(TitleAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 0, duration: 3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(TitleBottomAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 0, duration: 3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleBottomAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleAnimation, {x: -80 , opacity: 0}, {x: 0, opacity: 1, delay: 0, duration: 3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(ButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, delay: 0, duration: 3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=400',toggleActions:'play none none none'}});
 
 
     }, [])
 
     return (
         <>
-            <EventSection>
+            <EventSection ref={el => {TriggerAnimation = el}}>
                 <EventContainer>
                         <EventTitle nopaddingbot ref={el => {TitleAnimation = el}}>Upcoming</EventTitle>
                         <EventTitle zero  ref={el => {TitleBottomAnimation = el}}> Events</EventTitle>
@@ -59,3 +69,4 @@ const Events = () => {
 }
 
 export default Events
+

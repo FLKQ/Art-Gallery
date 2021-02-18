@@ -6,10 +6,13 @@ import ArticlesSideCard from './ArticlesSideCard';
 import GetTicket from './GetTicket';
 import {TicketButton} from './GetTicket.elements';
 import {gsap, Power3} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 
 
 const Articles = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
 
     let TitleAnimation = useRef(null);
     let SubtitleAnimation = useRef(null);
@@ -46,11 +49,16 @@ const Articles = () => {
         ShowTicket();
         console.log(ticket);
 
-        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.7, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.9, ease: Power3.easeOut});
-        gsap.fromTo(ArticleCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
-        gsap.fromTo(ArticleTicketAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1.5, ease: Power3.easeOut});
+        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.2, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.4, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleBotAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(ArticleCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 1, delay: 0.6, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ArticleCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(ArticleTicketAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ArticleTicketAnimation, start: 'top center+=125',toggleActions:'play none none none'}});
 
     },[]);
 

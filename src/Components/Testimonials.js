@@ -6,8 +6,11 @@ import RatingCard from './RatingCard';
 import PersonTwo from '../Images/PersonTwo.jpg';
 import PersonFirst from '../Images/PersonFirst.jpg';
 import {gsap, Power3} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const Testimonials = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
 
     let TitleAnimation = useRef(null);
     let SubtitleAnimation = useRef(null);
@@ -16,11 +19,16 @@ const Testimonials = () => {
     let SecondCardAnimation = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.8, ease: Power3.easeOut});
-        gsap.fromTo(ButtonAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.8, ease: Power3.easeOut});
-        gsap.fromTo(FirstCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
-        gsap.fromTo(SecondCardAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut});
+        gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(ButtonAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+        gsap.fromTo(FirstCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: FirstCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
+        gsap.fromTo(SecondCardAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SecondCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
 
     },[])
 

@@ -8,8 +8,11 @@ import oluchi from '../Images/Oluchi.jpg';
 import tua from '../Images/Tua.jpg';
 import './HeaderElements.css';
 import {gsap, Power3} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 const Curators = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
 
     let TitleAnimation = useRef(null);
     let SubtitleAnimation = useRef(null);
@@ -21,14 +24,22 @@ const Curators = () => {
     let ButtonAnimation = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo(TitleAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.5, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.9, ease: Power3.easeOut});
-        gsap.fromTo(SubtitleBotAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.9, ease: Power3.easeOut});
-        gsap.fromTo(FirstCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.3, ease: Power3.easeOut});
-        gsap.fromTo(SecondCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.5, ease: Power3.easeOut});
-        gsap.fromTo(ThirdCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.7, ease: Power3.easeOut});
-        gsap.fromTo(FourthCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.9, ease: Power3.easeOut});
-        gsap.fromTo(ButtonAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 2, ease: Power3.easeOut});
+        gsap.fromTo(TitleAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+            scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.4, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(SubtitleBotAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.4, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SubtitleBotAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(FirstCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.6, ease: Power3.easeOut,
+            scrollTrigger: {trigger: FirstCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(SecondCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.8, ease: Power3.easeOut,
+            scrollTrigger: {trigger: SecondCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(ThirdCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ThirdCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(FourthCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut,
+            scrollTrigger: {trigger: FourthCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+        gsap.fromTo(ButtonAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1.2, ease: Power3.easeOut,
+            scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=450',toggleActions:'play none none none'}});
 
 
     },[])
