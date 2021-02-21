@@ -90,6 +90,12 @@ list-style: none;
     white-space: nowrap;
     
 }
+@media screen and (max-width: 400px){
+    width: 100%;
+    overflow: auto;
+    
+    
+}
 `;
 
 export const NavigationItem = styled.li`
