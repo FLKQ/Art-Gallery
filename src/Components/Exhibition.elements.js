@@ -19,7 +19,7 @@ background-color: #fff;
 }
 
 @media screen and (max-width: 400px){
-    height: 750vh;
+    height: 680vh;
     max-height: 750vh;
 }
 `;
