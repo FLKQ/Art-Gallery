@@ -32,7 +32,7 @@ font-weight: 600;
 export const Container = styled.div`
     z-index: 1;
     width: 100%;
-    max-width: ${({common}) => (common ? '1300px' : '100%')};
+    max-width: ${({common}) => (common ? '100%' : '100%')};
     margin-right: auto;
     margin-left: auto;
     padding-right: 50px;
