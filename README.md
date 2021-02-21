@@ -1,3 +1,3 @@
 # FLKQ
 # Art Gallery
-# react + redux + styled components + gsap 
+# react + styled components + gsap 
