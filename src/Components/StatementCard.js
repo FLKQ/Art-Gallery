@@ -17,13 +17,13 @@ function StatementCard (props) {
      
 
      useEffect(() => {
-        gsap.fromTo(TitleAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(TitleAnimation, {x: 0 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
         gsap.fromTo(SubtitleAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
-        gsap.fromTo(IconAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(IconAnimation, {x: -30 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: IconAnimation, start: 'top center+=90',toggleActions:'play none none none'}});
-        gsap.fromTo(TitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(TitleBotAnimation, {x: 0 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleBotAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
 
     },[]);

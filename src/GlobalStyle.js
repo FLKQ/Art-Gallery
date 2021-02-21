@@ -6,8 +6,22 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
    
 }
+
+
+html,body
+{
+    @media screen and (max-width: 400px) {
+    width: 100%;
+    margin: 0 ;
+    padding: 0px;
+    overflow-x: hidden; 
+    }
+}
+
+
 
 
 `;
@@ -32,7 +46,7 @@ font-weight: 600;
 export const Container = styled.div`
     z-index: 1;
     width: 100%;
-    max-width: ${({common}) => (common ? '100%' : '100%')};
+    max-width: ${({common}) => (common ? '1300px' : '100%')};
     margin-right: auto;
     margin-left: auto;
     padding-right: 50px;

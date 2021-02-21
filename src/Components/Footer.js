@@ -23,7 +23,7 @@ const Footer = () => {
             scrollTrigger: {trigger: logoAnimation, start: 'top center+=150',toggleActions:'play none none none'}});
         gsap.fromTo(CopyrightAnimation, {y: 50 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
                 scrollTrigger: {trigger: CopyrightAnimation, start: 'top top+=1000',toggleActions:'play none none none'}});  
-        gsap.fromTo(TermsAnimation, {y: 50 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(TermsAnimation, {y: 50 , opacity: 0}, {y: 0 , opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
                     scrollTrigger: {trigger: TermsAnimation, start: 'top top+=1000',toggleActions:'play none none none'}});
         gsap.fromTo(PrivacyAnimation, {y: 50 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
                         scrollTrigger: {trigger: PrivacyAnimation, start: 'top top+=1000',toggleActions:'play none none none'}});        

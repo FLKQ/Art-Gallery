@@ -18,11 +18,11 @@ const ArticlesSideCard = () => {
     let ArticleCardAnimation = useRef(null);
 
      useEffect(() => {
-        gsap.fromTo(FistCardAnimation, {x: 50 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.3, ease: Power3.easeOut,
+        gsap.fromTo(FistCardAnimation, {y: 50 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: FistCardAnimation, start: 'top center',toggleActions:'play none none none'}});
-        gsap.fromTo(SecondCardAnimation, {x: 80 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.4, ease: Power3.easeOut,
+        gsap.fromTo(SecondCardAnimation, {y: 80 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1.4, ease: Power3.easeOut,
             scrollTrigger: {trigger: SecondCardAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
-        gsap.fromTo(ThirdCardAnimation, {x: 100 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.5, ease: Power3.easeOut,
+        gsap.fromTo(ThirdCardAnimation, {y: 100 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1.5, ease: Power3.easeOut,
             scrollTrigger: {trigger: ThirdCardAnimation, start: 'top center+=300',toggleActions:'play none none none'}});
 
     },[]);

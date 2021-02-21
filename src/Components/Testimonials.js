@@ -23,11 +23,11 @@ const Testimonials = () => {
             scrollTrigger: {trigger: TitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
         gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
-        gsap.fromTo(ButtonAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+        gsap.fromTo(ButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
-        gsap.fromTo(FirstCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+        gsap.fromTo(FirstCardAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: FirstCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
-        gsap.fromTo(SecondCardAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
+        gsap.fromTo(SecondCardAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: SecondCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
 
     },[])

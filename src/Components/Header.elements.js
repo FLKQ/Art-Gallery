@@ -91,6 +91,7 @@ export const BottomCircle = styled.div`
      left: 15%;
      border-top-right-radius: 350px;
      border-top-left-radius: 350px;
+     
     
      @media screen and (max-width: 960px){
     width: 250px;
@@ -118,6 +119,7 @@ export const BottomCircleInner = styled.div`
  bottom: 17px;
  left: 17%;
  z-index: 100;
+ 
 
  @media screen and (max-width: 960px){
     width: 180px;
@@ -145,7 +147,7 @@ position: absolute;
 z-index: 0;
 left: 30.5%;
 top: 33%;
-overflow: hidden; // eto esli 4e ybratb
+ // eto esli 4e ybratb
 
 @media screen and (max-width: 960px){
     width: 100px;
@@ -175,6 +177,7 @@ z-index: 0;
 left: 60%;
 top: 60%;
 
+
 @media screen and (max-width: 960px){
     height: 160px;
     width: 150px;
@@ -198,6 +201,7 @@ z-index: 0;
 left: 0;
 top: 15%;
 
+
 @media screen and (max-width: 960px){
     width: 150px;
     height: 250px;
@@ -215,9 +219,10 @@ position: absolute;
 width: 120px;
 height: 270px;
 z-index: 0;
-right: 0;
+right: 6.5%;
 top: 25%;
 background-size: cover;
+
 
 @media screen and (max-width: 960px){
     height: 150px;
@@ -237,6 +242,7 @@ export const TopCircle = styled.div`
      border-bottom-left-radius: 350px;
      z-index: 999;
      background-size: cover;
+
     
  @media screen and (max-width: 960px){
     width: 250px;
@@ -264,6 +270,7 @@ top: 0;
  left: 66%;
  z-index: 999;
 
+
  @media screen and (max-width: 960px){
     width: 180px;
     height: 80px;
@@ -288,6 +295,7 @@ top: -20px;
  left: 20%;
  z-index: 999;
 
+
  @media screen and (max-width: 960px){
     display: none;
 }
@@ -306,6 +314,7 @@ width: 150px;
 top: 0;
  left: 21%;
  z-index: 999;
+
  
  @media screen and (max-width: 960px){
     display: none;
@@ -322,6 +331,7 @@ width: 110px;
 top: 0px;
  left: 20%;
  z-index: 999;
+
  
  @media screen and (max-width: 960px){
     display: none;
@@ -338,6 +348,7 @@ width: 2px;
 top: 146.8px;
  left: 25.67%;
  z-index: 999;
+
  
  @media screen and (max-width: 960px){
     display: none;
@@ -355,6 +366,7 @@ border-top-right-radius: 50px;
 border-top-left-radius: 50px;
 bottom: 17px;
 right: 10%;
+
 
 @media screen and (max-width: 960px){
     height: 60px;

@@ -30,13 +30,13 @@ const Curators = () => {
             scrollTrigger: {trigger: SubtitleAnimation, start: 'top center',toggleActions:'play none none none'}});
         gsap.fromTo(SubtitleBotAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.4, ease: Power3.easeOut,
             scrollTrigger: {trigger: SubtitleBotAnimation, start: 'top center',toggleActions:'play none none none'}});
-        gsap.fromTo(FirstCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.6, ease: Power3.easeOut,
+        gsap.fromTo(FirstCardAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.6, ease: Power3.easeOut,
             scrollTrigger: {trigger: FirstCardAnimation, start: 'top center',toggleActions:'play none none none'}});
-        gsap.fromTo(SecondCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.8, ease: Power3.easeOut,
+        gsap.fromTo(SecondCardAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.8, ease: Power3.easeOut,
             scrollTrigger: {trigger: SecondCardAnimation, start: 'top center',toggleActions:'play none none none'}});
-        gsap.fromTo(ThirdCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1, ease: Power3.easeOut,
+        gsap.fromTo(ThirdCardAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1, ease: Power3.easeOut,
             scrollTrigger: {trigger: ThirdCardAnimation, start: 'top center',toggleActions:'play none none none'}});
-        gsap.fromTo(FourthCardAnimation, {x: 60 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut,
+        gsap.fromTo(FourthCardAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 1.2, ease: Power3.easeOut,
             scrollTrigger: {trigger: FourthCardAnimation, start: 'top center',toggleActions:'play none none none'}});
         gsap.fromTo(ButtonAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1.2, ease: Power3.easeOut,
             scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=450',toggleActions:'play none none none'}});
