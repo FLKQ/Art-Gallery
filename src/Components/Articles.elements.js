@@ -12,7 +12,7 @@ background-color: #fff;
 }
 
 @media screen and (max-width:376px){
- height: 540vh; //480
+ height: 680vh; //480
     
 }
 `;
