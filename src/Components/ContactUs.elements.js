@@ -7,7 +7,7 @@ background-color: #121212;
 color: white;
 
 @media screen and (max-width: 376px){
-    height: 172vh;
+    height: 180vh;
 }
 `;
 
