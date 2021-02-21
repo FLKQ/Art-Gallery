@@ -29,7 +29,7 @@ const ContactUs = () => {
             scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
         gsap.fromTo(ButtonAnimation, {x: -100 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
                 scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=300',toggleActions:'play none none none'}});
-        gsap.fromTo(MapAnimation, {x: 100 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 1, ease: Power3.easeOut,
+        gsap.fromTo(MapAnimation, {y: 100 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1, ease: Power3.easeOut,
                     scrollTrigger: {trigger: MapAnimation, start: 'top center',toggleActions:'play none none none'}});
 
     },[]);

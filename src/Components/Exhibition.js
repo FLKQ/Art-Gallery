@@ -55,30 +55,140 @@ const Exhibition = () => {
         scrollTrigger: {trigger: FifthCardAnimation, start: 'top center',toggleActions:'play none none none'}});
         gsap.fromTo(SixthCardAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: SixthCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+
+            
     
         
-    }, [])
+    }, []);
+
+    let TypeReference = useRef(null);
 
     const [color, setColor] = useState(true);
     const [sort, setSort] = useState(false);
+    const [generalSort, setGeneralSort] = useState(false);
+    const [historySort, setHistorySort] = useState(false);
+    const [scienceSort, setScienceSort] = useState(false);
+    const [technologySort, setTechnologySort] = useState(false);
+    const [artSort, setArtSort] = useState(false);
 
     const handleColor = () => setColor(!color);
     const handleSort = () => setSort(!sort);
+    const handleGeneralSort = () => setGeneralSort(!generalSort);
+    const handleHistorySort = () => setHistorySort(!historySort);
+    const handleScienceSort = () => setScienceSort(!scienceSort);
+    const handleTechnologySort = () => setTechnologySort(!technologySort);
+    const handleArtSort = () => setArtSort(!artSort);
+
+    const GeneralSortFalse = () => setGeneralSort(false);
+    const SeeAllSortFalse = () => setSort(false);
+    const HistorySortFalse = () => setHistorySort(false);
+    const ScienceSortFalse = () => setScienceSort(false);
+    const TechnologySortFalse = () => setTechnologySort(false);
+    const ArtSortFalse = () => setArtSort(false);
 
     function handleBorder() {
         if(color){
-            return <NavigationLinks to = '/' style={{borderBottom: '2px solid #b895fa'}} onClick={handleColor}>See All</NavigationLinks>
+            return <NavigationLinks to = '/' style={{color: "#b895fa"}} onClick={handleColor}>See All</NavigationLinks>
         }else
              return <NavigationLinks to='/' onClick={handleColor}>See All</NavigationLinks>
-    }
+    };
 
     function handleImage(newDispay){
-        if(handleSort){
-            let x = document.getElementById("general");
+        if(sort){
+            document.querySelector(".historyItems").style.display = "unset";
+            document.querySelector(".scienceItems").style.display = "unset";
+            document.querySelector(".technologyItems").style.display = "unset";
+            document.querySelector(".artItems").style.display = "unset";
+            document.querySelector(".generalOne").style.display = "unset";
+            document.querySelector(".generalTwo").style.display = "unset";
             
-        }else ;
+        }else {
+            
+        }
 
-    }
+    };
+
+    function sortImagesByGeneral(newDisplay) {
+        if(generalSort){
+            document.querySelector(".generalOne").style.display = "unset";
+            document.querySelector(".generalTwo").style.display = "unset";
+            document.querySelector(".historyItems").style.display = "none";
+            document.querySelector(".scienceItems").style.display = "none";
+            document.querySelector(".technologyItems").style.display = "none";
+            document.querySelector(".artItems").style.display = "none";
+            
+
+        }else {
+          
+        }
+    };
+
+    function sortImagesByHistory(newDisplay) {
+        if(historySort){
+            document.querySelector(".historyItems").style.display = "unset";
+            document.querySelector(".scienceItems").style.display = "none";
+            document.querySelector(".technologyItems").style.display = "none";
+            document.querySelector(".artItems").style.display = "none";
+            document.querySelector(".generalOne").style.display = "none";
+            document.querySelector(".generalTwo").style.display = "none";
+
+        }else {
+            
+        }
+    };
+
+    function sortImagesByScience(newDisplay) {
+        if(scienceSort){
+            document.querySelector(".historyItems").style.display = "none";
+            document.querySelector(".scienceItems").style.display = "unset";
+            document.querySelector(".technologyItems").style.display = "none";
+            document.querySelector(".artItems").style.display = "none";
+            document.querySelector(".generalOne").style.display = "none";
+            document.querySelector(".generalTwo").style.display = "none";
+
+        }else {
+            
+        }
+    };
+
+    function sortImagesByTechnology(newDisplay) {
+        if(technologySort){
+            document.querySelector(".historyItems").style.display = "none";
+            document.querySelector(".scienceItems").style.display = "none";
+            document.querySelector(".technologyItems").style.display = "unset";
+            document.querySelector(".artItems").style.display = "none";
+            document.querySelector(".generalOne").style.display = "none";
+            document.querySelector(".generalTwo").style.display = "none";
+
+        }else {
+            
+        }
+    };
+
+    function sortImagesByArt(newDisplay) {
+        if(artSort){
+            document.querySelector(".historyItems").style.display = "none";
+            document.querySelector(".scienceItems").style.display = "none";
+            document.querySelector(".technologyItems").style.display = "none";
+            document.querySelector(".artItems").style.display = "unset";
+            document.querySelector(".generalOne").style.display = "none";
+            document.querySelector(".generalTwo").style.display = "none";
+
+        }else {
+            
+        }
+    };
+
+    useEffect(() => {
+        handleImage();
+        handleBorder();
+        sortImagesByHistory();
+        sortImagesByGeneral();
+        sortImagesByScience();
+        sortImagesByTechnology();
+        sortImagesByArt();
+    },[generalSort,historySort,scienceSort,technologySort,artSort,sort]);
+
 
     return (
         <>
@@ -88,45 +198,63 @@ const Exhibition = () => {
                                 <ExhibitionTitle ref={el => {TitleAnimation = el}}>Current Exhibition</ExhibitionTitle>
                                 <SubTitle ref={el => {SubtitleAnimation = el}}>The purpose of modern museums is to collect, preserve, interpret, and display objects.</SubTitle>
                                     <NavigationMenu ref={el => {MenuAnimation = el}}>
-                                        <NavigationItem onClick={() => {handleColor(); handleSort(); handleImage()}}>    
-                                            {handleBorder()}
+                                        <NavigationItem onClick={() => {handleColor(); handleSort(); handleImage()}} ref={el=>{TypeReference = el}}>    
+                                            <NavigationLinks to='/' onClick={() => {handleImage(); handleSort(); HistorySortFalse();
+                                            TechnologySortFalse(); ArtSortFalse(); ScienceSortFalse(); GeneralSortFalse(); }}>See All</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
-                                            <NavigationLinks to='/'>General</NavigationLinks>
+                                            <NavigationLinks to='/' onClick={() => {handleGeneralSort(); sortImagesByGeneral();HistorySortFalse();
+                                            TechnologySortFalse(); ArtSortFalse(); ScienceSortFalse(); }}>General</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
-                                            <NavigationLinks to='/'>History</NavigationLinks>
+                                            <NavigationLinks to='/'onClick = { () => {handleHistorySort(); sortImagesByHistory(); GeneralSortFalse(); SeeAllSortFalse();
+                                            ScienceSortFalse(); TechnologySortFalse(); ArtSortFalse();}}>History</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
-                                            <NavigationLinks to='/'>Science</NavigationLinks>
+                                            <NavigationLinks to='/' onClick = { () => {handleScienceSort(); sortImagesByScience(); GeneralSortFalse(); SeeAllSortFalse();
+                                            HistorySortFalse(); ArtSortFalse(); TechnologySortFalse();}}>Science</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
-                                            <NavigationLinks to='/'>Technology</NavigationLinks>
+                                            <NavigationLinks to='/' onClick = { () => {handleTechnologySort(); sortImagesByTechnology(); GeneralSortFalse(); SeeAllSortFalse();
+                                            HistorySortFalse(); ArtSortFalse(); ScienceSortFalse(); }}>Technology</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
-                                            <NavigationLinks to='/'>Art</NavigationLinks>
+                                            <NavigationLinks to='/' onClick = { () => {handleArtSort(); sortImagesByArt(); GeneralSortFalse(); SeeAllSortFalse();
+                                            HistorySortFalse(); ScienceSortFalse(); TechnologySortFalse(); }}>Art</NavigationLinks>
                                         </NavigationItem>
                                     </NavigationMenu>
                             </NavigationHolder>
                             <CardHolder >
+                                <div className = "generalOne">
                                 <FirstCard ref={el => {FirstCardAnimation = el}}>
                             <Card type="General" title="Galleries have multiple roles,both visible and invisible" date="1 Jan - 7 Jan 2021" link={Mask} id="general" icon={<FaCalendarAlt/>}/>
                             </FirstCard>
+                            </div>
+                            <div className="historyItems">
                             <SecondCard ref={el => {SecondCardAnimation = el}}>
                             <Card type="History" title="Artists,often by going above and beyond the normal work" date="8 Jan - 15 Jan 2021" link={Magazine} size="450" id="history" icon={<FaCalendarAlt/>}/>
                             </SecondCard>
+                            </div>
+                            <div className="scienceItems">
                             <ThirdCard ref={el => {ThirdCardAnimation = el}}>
                             <Card type="Science" title="Promoting their artists,and selling the works" date="16 Jan - 23 Jan 2021" link={Abstract} id="science" icon={<FaCalendarAlt/>}/>
                             </ThirdCard>
+                            </div>
+                            <div className="technologyItems">
                             <FourthCard ref={el => {FourthCardAnimation = el}}>
                             <Card type="Technology" title="Financial management or book publishing in order to help" date="24 Jan - 31 Jan 2021" link={Cube} id="technology" icon={<FaCalendarAlt/>}/>
                             </FourthCard>
+                            </div>
+                            <div className="artItems">
                             <FifthCard ref={el => {FifthCardAnimation = el}}>
                             <Card type="Art" title="Commision is the percentage of the art sale price" date="1 Feb - 14 Feb 2021" link={Aquarel} size="450" id="art" icon={<FaCalendarAlt/>}/>
                             </FifthCard>
+                            </div>
+                            <div className = "generalTwo">
                             <SixthCard ref={el => {SixthCardAnimation = el}}>
                             <Card type="General" title="Art sale price that a gallery keeps, with the remainder" date="15 Feb - 22 Feb 2021" link={Squares} id="general" icon={<FaCalendarAlt/>}/>
                             </SixthCard>
+                            </div>
                             </CardHolder>
                             <ButtonHolder>
                                 <LoadMoreButton style={{fontFamily: 'duera'}} ref={el => {ButtonAnimation = el}}>LOAD MORE</LoadMoreButton>
