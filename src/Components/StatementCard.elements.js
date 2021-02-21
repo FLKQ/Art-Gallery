@@ -6,7 +6,7 @@ import './HeaderElements.css';
 export const WholeStatementHolder = styled.div`
 width: 20%;
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
  width: 60%;
     
 }

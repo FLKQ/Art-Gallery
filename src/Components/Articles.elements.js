@@ -11,7 +11,7 @@ background-color: #fff;
     
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
  height: 630vh; //480
     
 }
@@ -44,7 +44,7 @@ export const ArticlesSubtext = styled.p`
 
 font-size: 22px;
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
   width:80%;
     
 }
@@ -91,7 +91,7 @@ height: 600px;
 margin-bottom: 50px;
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
 width: 320px;
 height: 600px;
 background-size: fill;
@@ -111,7 +111,7 @@ height: 600px;
     
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
 width: 320px;
 height: 600px;
 margin-left:0;
@@ -144,7 +144,7 @@ margin-left: 15rem;
  padding: 20px 80px 20px 30px;   
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
   padding: 20px 15px 20px 15px;
     
 }

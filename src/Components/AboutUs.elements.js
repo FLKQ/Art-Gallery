@@ -14,7 +14,7 @@ background-color: #fff;
 max-height: 850vh;
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
     height: 970vh; //415
 max-height: 1000vh;
 }
@@ -49,7 +49,7 @@ object-fit: cover;
 border: 2px solid black;
 padding: 30px;
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
  width: 345px;
     
 }
@@ -155,7 +155,7 @@ border-radius: 5px;
     height: 700px;
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
  width: 345px;
     
 }
@@ -193,7 +193,7 @@ justify-content: center;
     justify-content: center;
     height: 90vh;
 }
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
  height: 120vh;
    
 }
@@ -211,7 +211,7 @@ width: 78%;
     width: 100%;
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:400px){
  justify-content: space-around;
     
 }
