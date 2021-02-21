@@ -20,7 +20,7 @@ const FooterMenu = props => {
         gsap.fromTo(ItemTwoAnimation, {x: -100 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.1, ease: Power3.easeOut,
             scrollTrigger: {trigger: ItemTwoAnimation, start: 'top center+=200',toggleActions:'play none none none'}});
         gsap.fromTo(ItemThreeAnimation, {x: -100 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.2, ease: Power3.easeOut,
-                scrollTrigger: {trigger: ItemThreeAnimation, start: 'top center+=200',toggleActions:'play none none none'}});
+                scrollTrigger: {trigger: ItemThreeAnimation, start: 'top center+=250',toggleActions:'play none none none'}});
         gsap.fromTo(ItemFourAnimation, {y: 100 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
                     scrollTrigger: {trigger: ItemFourAnimation, start: 'top center+=250',toggleActions:'play none none none'}});
 
