@@ -112,10 +112,15 @@ color: #fff;
 `;
 
 export const GalleryImg = styled.img`
-object-fit: cover;
+width: 450px;
 
 @media screen and (max-width: 960px){
     margin-bottom: 20px;
+    width: 450px;
+}
+
+@media screen and (max-width: 376px){
+    width: 375px; //376
 }
 
 `;

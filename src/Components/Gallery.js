@@ -59,22 +59,22 @@ const Gallery = () => {
                                 <GallerySubTitle ref={el => {SubtitleAnimation = el}}>From a visitor or community perspective,the purpose can also depend on one's point of view.</GallerySubTitle>             
                             <CardHolder>
                                 <div className = "FirstImg" ref={el => {FirstImageAnimation = el}}>
-                                <GalleryImg src={Face} style={{width: '450px', height: '410px'}}/>
+                                <GalleryImg src={Face} style={{ height: '410px'}}/>
                                 </div>
                                 <div className = "SecondImg" ref={el => {SecondImageAnimation = el}}>
-                                <GalleryImg src={AwesomeDrawing} style={{width: '450px', height: '550px'}}/>
+                                <GalleryImg src={AwesomeDrawing} style={{ height: '550px'}}/>
                                 </div>
                                 <div className = "ThirdImg" ref={el => {ThirdImageAnimation = el}}>
-                                <GalleryImg src={UnrealLight} style={{width: '450px', height: '270px'}}/>
+                                <GalleryImg src={UnrealLight} style={{ height: '270px'}}/>
                                 </div>
                                 <div className = "FourthImg" ref={el => {FourthImageAnimation = el}}>
-                                <GalleryImg src={OutOfWords} style={{width: '450px', height: '410px'}}/>
+                                <GalleryImg src={OutOfWords} style={{ height: '410px'}}/>
                                 </div>
                                 <div className = "FifthImg" ref={el => {FifthImageAnimation = el}}>
-                                <GalleryImg src={Xxx} style={{width: '450px', height: '270px'}}/>
+                                <GalleryImg src={Xxx} style={{ height: '270px'}}/>
                                 </div>
                                 <div className = "SixthImg" ref={el => {SixthImageAnimation = el}}>
-                                <GalleryImg src={Girl} style={{width: '450px', height: '550px'}}/>
+                                <GalleryImg src={Girl} style={{ height: '550px'}}/>
                                 </div>
                             </CardHolder>
                             <ButtonHolder>

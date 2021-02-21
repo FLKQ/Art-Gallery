@@ -19,8 +19,8 @@ background-color: #fff;
 }
 
 @media screen and (max-width: 376px){
-    height: 600vh;
-    max-height: 600vh;
+    height: 700vh;
+    max-height: 700vh;
 }
 `;
 
