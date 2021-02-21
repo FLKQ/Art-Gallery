@@ -95,6 +95,7 @@ const Exhibition = () => {
 
     function handleImage(newDispay){
         if(sort){
+            seeAllRef.current.style.color = "#b895fa";
             document.querySelector(".historyItems").style.display = "unset";
             document.querySelector(".scienceItems").style.display = "unset";
             document.querySelector(".technologyItems").style.display = "unset";
@@ -103,13 +104,14 @@ const Exhibition = () => {
             document.querySelector(".generalTwo").style.display = "unset";
             
         }else {
-            
+            seeAllRef.current.style.color = "#7c7b7d";
         }
 
     };
 
     function sortImagesByGeneral(newDisplay) {
         if(generalSort){
+            generalRef.current.style.color = "#b895fa";
             document.querySelector(".generalOne").style.display = "unset";
             document.querySelector(".generalTwo").style.display = "unset";
             document.querySelector(".historyItems").style.display = "none";
@@ -119,12 +121,13 @@ const Exhibition = () => {
             
 
         }else {
-          
+            generalRef.current.style.color = "#7c7b7d";
         }
     };
 
     function sortImagesByHistory(newDisplay) {
         if(historySort){
+            historyRef.current.style.color = "#b895fa";
             document.querySelector(".historyItems").style.display = "unset";
             document.querySelector(".scienceItems").style.display = "none";
             document.querySelector(".technologyItems").style.display = "none";
@@ -133,12 +136,13 @@ const Exhibition = () => {
             document.querySelector(".generalTwo").style.display = "none";
 
         }else {
-            
+            historyRef.current.style.color = "#7c7b7d";
         }
     };
 
     function sortImagesByScience(newDisplay) {
         if(scienceSort){
+            scienceRef.current.style.color = "#b895fa";
             document.querySelector(".historyItems").style.display = "none";
             document.querySelector(".scienceItems").style.display = "unset";
             document.querySelector(".technologyItems").style.display = "none";
@@ -147,12 +151,13 @@ const Exhibition = () => {
             document.querySelector(".generalTwo").style.display = "none";
 
         }else {
-            
+            scienceRef.current.style.color = "#7c7b7d";
         }
     };
 
     function sortImagesByTechnology(newDisplay) {
         if(technologySort){
+            technologyRef.current.style.color = "#b895fa";
             document.querySelector(".historyItems").style.display = "none";
             document.querySelector(".scienceItems").style.display = "none";
             document.querySelector(".technologyItems").style.display = "unset";
@@ -161,12 +166,13 @@ const Exhibition = () => {
             document.querySelector(".generalTwo").style.display = "none";
 
         }else {
-            
+            technologyRef.current.style.color = "#7c7b7d";
         }
     };
 
     function sortImagesByArt(newDisplay) {
         if(artSort){
+            artRef.current.style.color = "#b895fa";
             document.querySelector(".historyItems").style.display = "none";
             document.querySelector(".scienceItems").style.display = "none";
             document.querySelector(".technologyItems").style.display = "none";
@@ -175,7 +181,7 @@ const Exhibition = () => {
             document.querySelector(".generalTwo").style.display = "none";
 
         }else {
-            
+            artRef.current.style.color = "#7c7b7d";
         }
     };
 
@@ -189,7 +195,12 @@ const Exhibition = () => {
         sortImagesByArt();
     },[generalSort,historySort,scienceSort,technologySort,artSort,sort]);
 
-
+    const generalRef = useRef();
+    const historyRef = useRef();
+    const scienceRef = useRef();
+    const technologyRef = useRef();
+    const artRef = useRef();
+    const seeAllRef = useRef();
     return (
         <>
             <ExhibitionSection>
@@ -200,27 +211,28 @@ const Exhibition = () => {
                                     <NavigationMenu ref={el => {MenuAnimation = el}}>
                                         <NavigationItem onClick={() => {handleColor(); handleSort(); handleImage()}} ref={el=>{TypeReference = el}}>    
                                             <NavigationLinks to='/' onClick={() => {handleImage(); handleSort(); HistorySortFalse();
-                                            TechnologySortFalse(); ArtSortFalse(); ScienceSortFalse(); GeneralSortFalse(); }}>See All</NavigationLinks>
+                                            TechnologySortFalse(); ArtSortFalse(); ScienceSortFalse(); GeneralSortFalse(); }} ref={seeAllRef}>See All</NavigationLinks>
                                         </NavigationItem>
-                                        <NavigationItem>    
+                                        <NavigationItem> 
                                             <NavigationLinks to='/' onClick={() => {handleGeneralSort(); sortImagesByGeneral();HistorySortFalse();
-                                            TechnologySortFalse(); ArtSortFalse(); ScienceSortFalse(); }}>General</NavigationLinks>
+                                            TechnologySortFalse(); ArtSortFalse(); ScienceSortFalse(); SeeAllSortFalse();}} ref={generalRef}>General</NavigationLinks>
                                         </NavigationItem>
+                                       
                                         <NavigationItem>    
                                             <NavigationLinks to='/'onClick = { () => {handleHistorySort(); sortImagesByHistory(); GeneralSortFalse(); SeeAllSortFalse();
-                                            ScienceSortFalse(); TechnologySortFalse(); ArtSortFalse();}}>History</NavigationLinks>
+                                            ScienceSortFalse(); TechnologySortFalse(); ArtSortFalse();}} ref={historyRef}>History</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
                                             <NavigationLinks to='/' onClick = { () => {handleScienceSort(); sortImagesByScience(); GeneralSortFalse(); SeeAllSortFalse();
-                                            HistorySortFalse(); ArtSortFalse(); TechnologySortFalse();}}>Science</NavigationLinks>
+                                            HistorySortFalse(); ArtSortFalse(); TechnologySortFalse();}} ref={scienceRef}>Science</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
                                             <NavigationLinks to='/' onClick = { () => {handleTechnologySort(); sortImagesByTechnology(); GeneralSortFalse(); SeeAllSortFalse();
-                                            HistorySortFalse(); ArtSortFalse(); ScienceSortFalse(); }}>Technology</NavigationLinks>
+                                            HistorySortFalse(); ArtSortFalse(); ScienceSortFalse(); }} ref={technologyRef}>Technology</NavigationLinks>
                                         </NavigationItem>
                                         <NavigationItem>    
                                             <NavigationLinks to='/' onClick = { () => {handleArtSort(); sortImagesByArt(); GeneralSortFalse(); SeeAllSortFalse();
-                                            HistorySortFalse(); ScienceSortFalse(); TechnologySortFalse(); }}>Art</NavigationLinks>
+                                            HistorySortFalse(); ScienceSortFalse(); TechnologySortFalse();}} ref={artRef}>Art</NavigationLinks>
                                         </NavigationItem>
                                     </NavigationMenu>
                             </NavigationHolder>
