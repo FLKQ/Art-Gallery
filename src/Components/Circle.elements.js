@@ -10,7 +10,7 @@ top: 60%;
    left: -7%;
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
    left: -18%;
 }
 

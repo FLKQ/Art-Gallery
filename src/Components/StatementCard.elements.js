@@ -63,7 +63,7 @@ margin-left: 15px;
 font-family: duera;
 font-size: 32px;
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     width: 100%;
     
 }

@@ -6,7 +6,7 @@ height: 92vh;
 background-color: #121212;
 color: white;
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     height: 180vh;
 }
 `;
@@ -22,7 +22,7 @@ justify-content: space-between;
 export const ContactUsWrapper = styled.div`
 display:flex;
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     flex-direction:column;
     align-items: center;
     
@@ -32,7 +32,7 @@ display:flex;
 export const ContactUsInfoWrapper = styled.div`
 padding-left: 13rem;
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     align-items:center;
     padding-left: 4rem;
     
@@ -52,7 +52,7 @@ margin-bottom: 20px;
 font-size: 22px;
 width: 65%;
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     margin-bottom: 30px;
     
 }
@@ -71,7 +71,7 @@ margin-right: 50px;
     
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     border-radius: 10px;
     width: 320px;
     align-items: center;
@@ -87,7 +87,7 @@ background-color: #b895fa;
 border: none;
 margin-top: 20px;
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 400px){
     margin-left: 45px;
     margin-top: 40px;
     
