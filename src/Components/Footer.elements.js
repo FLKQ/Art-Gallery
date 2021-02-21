@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 
 @media screen and (max-width: 400px){
-    height: 90vh;
+    height: 97vh;
 }
 `;
 
