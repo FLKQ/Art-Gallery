@@ -16,7 +16,7 @@ height: 100vh;
     
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
     height: 280vh;
     
 }
@@ -130,7 +130,7 @@ height: 350px;
     
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
  width: 320px;
  height: 650px;
     
@@ -149,7 +149,7 @@ width: 650px;
 height: 350px;
 padding-left: 50px;
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
  width: 320px;
  height: 650px;
     
@@ -182,7 +182,7 @@ height: 60px;
 object-fit: cover;
 border-radius: 50%;
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
  margin-top:20px;
     
 }
@@ -191,7 +191,7 @@ border-radius: 50%;
 export const RatingPersonInfoHolder = styled.div`
 margin-left: 20px;
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
  margin-top:20px;
     
 }

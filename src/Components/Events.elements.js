@@ -13,7 +13,7 @@ background-color: #e3f88f;
 max-height: 300vh;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     height: 345vh;
 max-height: 400vh;
 }
@@ -53,7 +53,7 @@ margin-bottom: 20px;
     height: 620px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 325px;
     height: 620px;
 }
@@ -117,7 +117,7 @@ object-fit: cover;
     border-radius: 10px;
 
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 280px;
 }
 

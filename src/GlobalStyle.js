@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
 html,body
 {
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 430px) {
     width: 100%;
     margin: 0 ;
     padding: 0px;

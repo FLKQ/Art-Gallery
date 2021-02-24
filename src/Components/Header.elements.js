@@ -100,7 +100,7 @@ export const BottomCircle = styled.div`
     bottom: 10px;
 }  
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 230px;
     height: 110px;
     left: -18%;
@@ -129,7 +129,7 @@ export const BottomCircleInner = styled.div`
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 170px;
     height: 80px;
     left: -11%;
@@ -157,7 +157,7 @@ top: 33%;
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 100px;
     height: 150px;
     top: 41%;
@@ -184,7 +184,7 @@ top: 60%;
     top:78%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     height: 115px;
     width: 110px;
     top:78%;
@@ -207,7 +207,7 @@ top: 15%;
     height: 250px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 90px;
     height: 180px;
 }
@@ -250,7 +250,7 @@ export const TopCircle = styled.div`
     left: 50%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     display: none;
 
 }
@@ -277,7 +277,7 @@ top: 0;
     left: 54%;
 
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     display: none;
 
 }

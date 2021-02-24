@@ -8,7 +8,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     height: 97vh;
 }
 `;
@@ -22,7 +22,7 @@ margin-top: 40px;
 
 export const FooterWrapper = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: center;
 height: 300px;
 border-bottom: 2px solid #7c7b7d;
 
@@ -31,16 +31,16 @@ border-bottom: 2px solid #7c7b7d;
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width:100%;
     height: 500px;
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     justify-content:center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     
 } 
 
@@ -66,7 +66,7 @@ export const LinksHolder = styled.div`
 display: flex;
 flex-direction: row;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     margin-top: 40px;
     width:50%;
     justify-content: space-around;
@@ -78,7 +78,7 @@ export const FooterCopyright = styled.h1 `
 color: #7c7b7d;
 font-size: 15px;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     margin-top: 20px;
 }
 `;
@@ -88,7 +88,7 @@ display: flex;
 justify-content: space-between;
 margin-top: 40px;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     display: unset;
 }
 `;
@@ -96,7 +96,7 @@ margin-top: 40px;
 export const MoreInfoHolder = styled.div`
 display:flex;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width:100%;
     justify-content:center;
     align-items:center;
@@ -127,7 +127,7 @@ width: 30%;
     width: 34%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;

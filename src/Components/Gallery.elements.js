@@ -18,7 +18,7 @@ background-color: #121212;
     max-height: 550vh;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     height: 460vh;
     max-height: 600vh;
 }
@@ -119,7 +119,7 @@ width: 450px;
     width: 450px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 375px; //376
 }
 

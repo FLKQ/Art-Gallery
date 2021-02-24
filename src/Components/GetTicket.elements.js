@@ -30,7 +30,7 @@ border-radius: 5px;
     width: 500px;
     
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 325px;
     height: 620px;
 }
@@ -68,7 +68,7 @@ width: 40%;
     
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
 width: 70%;
     
 }

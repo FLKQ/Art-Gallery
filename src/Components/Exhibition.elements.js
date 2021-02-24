@@ -18,7 +18,7 @@ background-color: #fff;
     max-height: 550vh;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     height: 660vh;
     max-height: 750vh;
 }
@@ -90,7 +90,7 @@ list-style: none;
     white-space: nowrap;
     
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
     width: 100%;
     overflow: auto;
     

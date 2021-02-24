@@ -17,7 +17,7 @@ width: 400px;
 height: 400px;
 object-fit: cover;
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
     width: 300px;
 };
 `;
