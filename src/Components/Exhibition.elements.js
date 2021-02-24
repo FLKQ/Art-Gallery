@@ -24,7 +24,7 @@ background-color: #fff;
 }
 
 @media screen and (max-width: 385px){
-    height: 595vh;
+    height: 625vh;  //595 = 25  625 = 30
     max-height: 750vh;
 }
 
