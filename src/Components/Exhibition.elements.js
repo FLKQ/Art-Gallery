@@ -24,7 +24,8 @@ background-color: #fff;
 }
 
 @media screen and (max-width: 385px){
-    height: 650vh;  //595 = 25  625 = 30  625 + 25
+    height: 650vh;  //595 = 25  625 = 30  625 + 25 = 80vh 
+                    // a fucking difference between chrome devtools and iphone x ;)))))))))))))))))))
     max-height: 750vh;
 }
 

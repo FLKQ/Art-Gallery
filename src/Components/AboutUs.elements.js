@@ -26,7 +26,7 @@ max-height: 1050vh;
 };
 
 @media screen and (max-width: 385px){
-    height: 865vh;
+    height: 940vh;
 };
 
 `;

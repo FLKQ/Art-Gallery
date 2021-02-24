@@ -24,7 +24,7 @@ background-color: #121212;
 }
 
 @media screen and (max-width: 385px){
-    height: 395vh;
+    height: 460vh;
 }
 `;
 
