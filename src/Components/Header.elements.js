@@ -243,7 +243,15 @@ export const TopCircle = styled.div`
      z-index: 999;
      background-size: cover;
 
-    
+
+@media screen and (max-width: 1600px){
+    width: 250px;
+    height: 130px;
+    left: 69%;
+}
+@media screen and (max-width: 1400px){
+    display: none;
+}     
  @media screen and (max-width: 960px){
     width: 250px;
     height: 130px;
@@ -271,6 +279,17 @@ top: 0;
  z-index: 999;
 
 
+ @media screen and (max-width: 1600px){
+    width: 180px;
+    height: 80px;
+    left: 71.3%;
+
+}
+
+@media screen and (max-width: 1400px){
+    display:none;
+}  
+
  @media screen and (max-width: 960px){
     width: 180px;
     height: 80px;
@@ -295,10 +314,13 @@ top: -20px;
  left: 20%;
  z-index: 999;
 
+ @media screen and (max-width: 1625px){
+  display:none;  
+};
 
  @media screen and (max-width: 960px){
     display: none;
-}
+};
  
 
 `;
@@ -315,7 +337,10 @@ top: 0;
  left: 21%;
  z-index: 999;
 
- 
+ @media screen and (max-width: 1625px){
+  display:none;  
+};
+
  @media screen and (max-width: 960px){
     display: none;
 }
@@ -332,6 +357,9 @@ top: 0px;
  left: 20%;
  z-index: 999;
 
+ @media screen and (max-width: 1625px){
+  display:none;  
+};
  
  @media screen and (max-width: 960px){
     display: none;
@@ -349,7 +377,10 @@ top: 146.8px;
  left: 25.67%;
  z-index: 999;
 
- 
+ @media screen and (max-width: 1625px){
+  display:none;  
+};
+
  @media screen and (max-width: 960px){
     display: none;
 }

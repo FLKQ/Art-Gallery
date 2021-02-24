@@ -22,7 +22,7 @@ margin-top: 40px;
 
 export const FooterWrapper = styled.div`
 display: flex;
-justify-content: center;
+justify-content: space-between;
 height: 300px;
 border-bottom: 2px solid #7c7b7d;
 
@@ -34,13 +34,15 @@ border-bottom: 2px solid #7c7b7d;
 @media screen and (max-width: 430px){
     width:100%;
     height: 500px;
+    
 }
 
 
 @media screen and (max-width: 430px){
     justify-content:center;
     flex-direction: column;
-    align-items: flex-start;
+    align-self: flex-start;
+    
     
 } 
 
@@ -57,7 +59,7 @@ margin-bottom: 8px;
 list-style: none;
 `;
 
-export const FooterMenuLink = styled(Link)`
+export const FooterMenuLink = styled(Link)`                                                                                                                                                                                                                                                                                                                                                                                                                                         
 text-decoration: none;
 color: white;
 `;
@@ -71,6 +73,7 @@ flex-direction: row;
     width:50%;
     justify-content: space-around;
     margin-bottom: 35px;
+    align-self: center;
 }
 `;
 

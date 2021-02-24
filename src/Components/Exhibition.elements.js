@@ -33,6 +33,7 @@ export const ExhibitionContainer = styled(Container)`
 
 @media screen and (max-width: 960px){
         width: 100%;
+        
     
 }
 `;
