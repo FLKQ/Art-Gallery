@@ -94,7 +94,7 @@ const AboutUs = () => {
                     </RandomDiv>
                     <VideoPreviewHolder>
                         <VideoPreview src={Architecture} ref={el => {VideoAnimation = el}}/>
-                        <VideoPlayButtonLink href="https://www.youtube.com/watch?v=AafJiUJ2b20&ab_channel=EditMoment%27S" ref={el => {VideoButtonAnimation = el}}>
+                        <VideoPlayButtonLink href="https://www.youtube.com/watch?v=AafJiUJ2b20&ab_channel=EditMoment%27S" target="_blank"ref={el => {VideoButtonAnimation = el}}>
                         <VideoPlayButton>
                             <VideoPlayButtonIcon/>
                         </VideoPlayButton>

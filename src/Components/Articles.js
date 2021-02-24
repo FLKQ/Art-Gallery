@@ -20,6 +20,8 @@ const Articles = () => {
      let ArticleCardAnimation = useRef(null);
      let ArticleTicketAnimation = useRef(null);
 
+     let CurrentWidth = window.innerWidth;
+
     const[ticket,setTicket] = useState(false);
 
     const ChooseTicket = () =>{
@@ -49,6 +51,8 @@ const Articles = () => {
         ShowTicket();
         console.log(ticket);
 
+        if(CurrentWidth >= 1024){
+
         gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
         gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.2, ease: Power3.easeOut,
@@ -59,6 +63,18 @@ const Articles = () => {
             scrollTrigger: {trigger: ArticleCardAnimation, start: 'top center',toggleActions:'play none none none'}});
         gsap.fromTo(ArticleTicketAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: ArticleTicketAnimation, start: 'top center+=125',toggleActions:'play none none none'}});
+        }else{
+            gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+            gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SubtitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+            gsap.fromTo(SubtitleBotAnimation, {x: 40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SubtitleBotAnimation, start: 'top center',toggleActions:'play none none none'}});
+            gsap.fromTo(ArticleCardAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 1, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: ArticleCardAnimation, start: 'top center',toggleActions:'play none none none'}});
+            gsap.fromTo(ArticleTicketAnimation, {y: 60 , opacity: 0}, {y: 0, opacity: 1, duration: 0.8, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: ArticleTicketAnimation, start: 'top center+=125',toggleActions:'play none none none'}});
+        };
 
     },[]);
 

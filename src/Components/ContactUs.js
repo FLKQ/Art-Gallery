@@ -19,18 +19,33 @@ const ContactUs = () => {
     let ButtonAnimation = useRef(null);
     let MapAnimation = useRef(null);
 
+    let CurrentWidth = window.innerWidth;
+
 
     useEffect(() => {
-        gsap.fromTo(TitleAnimation, {x: -20 , opacity: 1}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        if(CurrentWidth > 1024){
+        gsap.fromTo(TitleAnimation, {x: -20 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
-        gsap.fromTo(TitleBotAnimation, {x: -30 , opacity: 1}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(TitleBotAnimation, {x: -30 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleBotAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
-        gsap.fromTo(SubtitleAnimation, {x: -35 , opacity: 1}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(SubtitleAnimation, {x: -35 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
-        gsap.fromTo(ButtonAnimation, {x: -35 , opacity: 1}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+        gsap.fromTo(ButtonAnimation, {x: -35 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
                 scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=300',toggleActions:'play none none none'}});
-        gsap.fromTo(MapAnimation, {y: 100 , opacity: 1}, {y: 0, opacity: 1, duration: 1, delay: 1, ease: Power3.easeOut,
+        gsap.fromTo(MapAnimation, {y: 100 , opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 1, ease: Power3.easeOut,
                     scrollTrigger: {trigger: MapAnimation, start: 'top center',toggleActions:'play none none none'}});
+        }else{
+            gsap.fromTo(TitleAnimation, {x: -20 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: TitleAnimation, start: 'top center',toggleActions:'play none none none'}});
+            gsap.fromTo(TitleBotAnimation, {x: -30 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: TitleBotAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(SubtitleAnimation, {x: -35 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(ButtonAnimation, {x: -35 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                    scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=300',toggleActions:'play none none none'}});
+            gsap.fromTo(MapAnimation, {y: 100 , opacity: 0}, {y: 0, opacity: 1, duration: 0.8, delay: 0, ease: Power3.easeOut,
+                        scrollTrigger: {trigger: MapAnimation, start: 'top center',toggleActions:'play none none none'}});
+        };
 
     },[]);
 

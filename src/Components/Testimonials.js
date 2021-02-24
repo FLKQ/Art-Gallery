@@ -18,7 +18,10 @@ const Testimonials = () => {
      let FirstCardAnimation = useRef(null);
     let SecondCardAnimation = useRef(null);
 
+    let CurrentWidth = window.innerWidth;
+
     useEffect(() => {
+        if(CurrentWidth >= 1024){
         gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
         gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
@@ -29,6 +32,18 @@ const Testimonials = () => {
             scrollTrigger: {trigger: FirstCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
         gsap.fromTo(SecondCardAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0.3, ease: Power3.easeOut,
             scrollTrigger: {trigger: SecondCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
+        }else{
+            gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: TitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(ButtonAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: ButtonAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(FirstCardAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 0.8, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: FirstCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
+            gsap.fromTo(SecondCardAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 0.8, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SecondCardAnimation, start: 'top center+=50',toggleActions:'play none none none'}});
+        };
 
     },[])
 

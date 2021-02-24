@@ -28,7 +28,11 @@ const Gallery = () => {
     let FifthImageAnimation = useRef(null);
     let SixthImageAnimation = useRef(null);
 
+    let currentWidth = window.innerWidth;
+
     useEffect(() => {
+
+        if(currentWidth >= 1024){
         gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2, delay: 0, ease: Power3.easeOut,
             scrollTrigger: {trigger: TitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
         gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 2,delay: 0, ease: Power3.easeOut,
@@ -47,6 +51,27 @@ const Gallery = () => {
             scrollTrigger: {trigger: SixthImageAnimation, start: 'top center+=200',toggleActions:'play none none none'}});
         gsap.fromTo(ButtonAnimation, {y: 40, opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 0 , ease: Power3.easeOut,
             scrollTrigger: {trigger: ButtonAnimation, start: 'top bottom',toggleActions:'play none none none'}})
+        }else{
+            gsap.fromTo(TitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 1, delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: TitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(SubtitleAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 1,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SubtitleAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(FirstImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 1,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: FirstImageAnimation, start: 'top top+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(SecondImageAnimation, {y: -40 , opacity: 0}, {y: 0, opacity: 1, duration: 1,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SecondImageAnimation, start: 'top top+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(ThirdImageAnimation, {y: -40 , opacity: 0}, {y: 0, opacity: 1, duration: 2,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: ThirdImageAnimation, start: 'top top+=300',toggleActions:'play none none none'}});
+            gsap.fromTo(FourthImageAnimation, {x: -40 , opacity: 0}, {x: 0, opacity: 1, duration: 1,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: FourthImageAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(FifthImageAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: FifthImageAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(SixthImageAnimation, {y: 40 , opacity: 0}, {y: 0, opacity: 1, duration: 1,delay: 0, ease: Power3.easeOut,
+                scrollTrigger: {trigger: SixthImageAnimation, start: 'top center+=100',toggleActions:'play none none none'}});
+            gsap.fromTo(ButtonAnimation, {y: 40, opacity: 0}, {y: 0, opacity: 1, duration: 1, delay: 0 , ease: Power3.easeOut,
+                scrollTrigger: {trigger: ButtonAnimation, start: 'top bottom',toggleActions:'play none none none'}})
+        };
+
     }, [])
 
 
