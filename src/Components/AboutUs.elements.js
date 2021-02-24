@@ -9,15 +9,25 @@ export const AboutUsSection = styled.section`
 height: 415vh; //415
 max-height: 500vh;
 background-color: #fff;
+
+@media screen and (max-width:1650px){
+    height: 440vh; //415
+max-height: 850vh;
+};
+
 @media screen and (max-width:960px){
     height: 800vh; //415
 max-height: 850vh;
-}
+};
 
 @media screen and (max-width:430px){
-    height: 940vh; //415
+    height: 855vh; //415
 max-height: 1050vh;
-}
+};
+
+@media screen and (max-width: 385px){
+    height: 865vh;
+};
 
 `;
 
@@ -150,6 +160,11 @@ height: 600px;
 object-fit: cover;
 border-radius: 5px;
 
+@media screen and (max-width:1650px){
+ width: 1300px;
+    
+}
+
 @media screen and (max-width:960px){
     width: 800px;
     height: 700px;
@@ -159,6 +174,8 @@ border-radius: 5px;
  width: 345px;
     
 }
+
+
 `;
 
 export const VideoPlayButton = styled.div`

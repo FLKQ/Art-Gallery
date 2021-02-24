@@ -13,6 +13,10 @@ justify-content: center;
 export const CuratorsHolder = styled.div`
 width: 85%;
 
+@media screen and (max-width:1650px){
+ width: 100%;
+}
+
 `;
 
 export const CuratorsTitle = styled.h1`

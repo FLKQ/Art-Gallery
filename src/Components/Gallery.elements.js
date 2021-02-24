@@ -9,7 +9,7 @@ max-height: 215vh;
 background-color: #121212;
 
 @media screen and (max-width:1639px){
-    height: 230vh;
+    height: 195vh;
     max-height: 550vh;
 }
 
@@ -19,8 +19,12 @@ background-color: #121212;
 }
 
 @media screen and (max-width: 430px){
-    height: 460vh;
+    height: 390vh;
     max-height: 600vh;
+}
+
+@media screen and (max-width: 385px){
+    height: 395vh;
 }
 `;
 
@@ -80,6 +84,14 @@ display: grid;
 grid-template-columns: 485px 485px 485px;
 grid-template-rows: 140px 140px 140px 140px 140px 140px 140px;
 
+
+@media screen and (max-width:1650px){
+grid-template-columns: 410px 410px 400px;
+grid-template-rows: 140px 140px 140px 140px 140px 140px 140px;
+
+    
+}
+
 @media screen and (max-width: 960px){
     display: flex;
     flex-direction: column;
@@ -113,6 +125,11 @@ color: #fff;
 
 export const GalleryImg = styled.img`
 width: 450px;
+
+@media screen and (max-width:1650px){
+ width: 400px;
+    
+}
 
 @media screen and (max-width: 960px){
     margin-bottom: 20px;

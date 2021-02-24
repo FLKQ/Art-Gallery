@@ -6,15 +6,24 @@ export const ArticlesSection = styled.section`
 height: 160vh; //160
 background-color: #fff;
 
+@media screen and (max-width:1650px){
+ height: 180vh; //480
+    
+}
+
 @media screen and (max-width:960px){
  height: 480vh; //480
     
 }
 
 @media screen and (max-width:430px){
- height: 600vh; //480
+ height: 500vh; //480
     
 }
+
+@media screen and (max-width: 385px){
+    height: 500vh;
+  }
 `;
 
 export const ArticlesContainer = styled.div`

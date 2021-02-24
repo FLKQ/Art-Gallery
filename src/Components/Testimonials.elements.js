@@ -14,11 +14,15 @@ height: 100vh;
 @media screen and (max-width:960px){
     height: 175vh;
     
-}
+};
 
 @media screen and (max-width:430px){
-    height: 280vh;
+    height: 240vh;
     
+};
+
+@media screen and (max-width: 385px){
+    height: 240vh;
 }
 
 `;
@@ -107,6 +111,14 @@ export const RatingCardSpreader = styled.div`
 display:flex;
 justify-content: space-between;
 width: 77%;
+
+@media screen and (max-width:1650px){
+width: 90%;
+}
+
+@media screen and (max-width:1460px){
+width: 98%;
+}
 
 @media screen and (max-width:960px){
     display:flex;

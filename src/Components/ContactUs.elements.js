@@ -6,6 +6,11 @@ height: 92vh;
 background-color: #121212;
 color: white;
 
+@media screen and (max-width:1650px){
+ height: 107vh;
+    
+}
+
 @media screen and (max-width: 430px){
     height: 187vh;
 }
@@ -62,6 +67,11 @@ export const ContactUsMap = styled.img`
 height: 890px;
 width: 1000px;
 object-fit: cover;
+
+@media screen and (max-width:1650px){
+ width: 750px;
+    
+}
 
 @media screen and (max-width:960px){
 width: 300px;

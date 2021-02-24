@@ -8,6 +8,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 
+@media screen and (max-width:1650px){
+ height: 56vh;
+    
+}
+
 @media screen and (max-width: 430px){
     height: 97vh;
 }

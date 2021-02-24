@@ -8,14 +8,25 @@ height: 130vh;
 max-height: 150vh;
 background-color: #e3f88f;
 
+@media screen and (max-width: 1650px){
+    height: 143vh;
+max-height: 300vh;
+}
+
 @media screen and (max-width: 960px){
     height: 275vh;
 max-height: 300vh;
 }
 
 @media screen and (max-width: 430px){
-    height: 345vh;
+    height: 285vh;
 max-height: 400vh;
+}
+
+
+
+@media screen and (max-width: 385px){
+    height: 295vh;
 }
 `;
 

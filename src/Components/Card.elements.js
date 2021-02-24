@@ -25,6 +25,17 @@ margin-top: 80px;
 `;
 
 export const CardImage = styled.img`
+
+@media screen and (max-width:1650px){
+width: 350px;
+    
+}
+
+@media screen and (max-width:1330px){
+width: 400px;
+    
+}
+
 width: 400px;
 height: 400px;
 object-fit: cover;

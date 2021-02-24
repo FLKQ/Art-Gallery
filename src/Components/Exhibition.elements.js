@@ -19,9 +19,16 @@ background-color: #fff;
 }
 
 @media screen and (max-width: 430px){
-    height: 660vh;
+    height: 550vh;
     max-height: 750vh;
 }
+
+@media screen and (max-width: 385px){
+    height: 570vh;
+    max-height: 750vh;
+}
+
+
 `;
 
 export const ExhibitionContainer = styled(Container)`
