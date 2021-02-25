@@ -29,6 +29,13 @@ background-color: #fff;
     max-height: 750vh;
 }
 
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+        height: 650vh;
+
+    }
+
 
 `;
 
