@@ -4,7 +4,6 @@ import {Container, Button} from '../GlobalStyle';
 import {FaPlay} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 
-
 export const AboutUsSection = styled.section`
 height: 415vh; //415
 max-height: 500vh;

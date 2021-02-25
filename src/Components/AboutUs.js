@@ -65,6 +65,7 @@ const AboutUs = () => {
 
     return (
         <>
+        
             <AboutUsSection>
                 <AboutUsContainer>
                     <AboutUsImageTextConnecter>
@@ -115,6 +116,7 @@ const AboutUs = () => {
                         </div>
                         <Curators/>
             </AboutUsSection>
+            
         </>
     )
 }

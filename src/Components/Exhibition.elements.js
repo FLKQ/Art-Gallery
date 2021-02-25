@@ -3,38 +3,15 @@ import {Container, Button} from '../GlobalStyle';
 import {Link} from 'react-router-dom';
 import './HeaderElements.css';
 
+export const RandomDiv = styled.div`
+
+`;
+
 export const ExhibitionSection = styled.section`
-height: 200vh;
-max-height: 215vh;
+
 background-color: #fff;
 
-@media screen and (max-width:1639px){
-    height: 230vh;
-    max-height: 550vh;
-}
 
-@media screen and (max-width:960px){
-    height: 530vh;
-    max-height: 550vh;
-}
-
-@media screen and (max-width: 430px){
-    height: 550vh;
-    max-height: 750vh;
-}
-
-@media screen and (max-width: 385px){
-    height: 650vh;  //595 = 25  625 = 30  625 + 25 = 80vh 
-                    // a fucking difference between chrome devtools and iphone x ;)))))))))))))))))))
-    max-height: 750vh;
-}
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) {
-        height: 650vh;
-
-    }
 
 
 `;

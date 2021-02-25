@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import {ExhibitionSection, ExhibitionContainer, NavigationHolder, NavigationMenu, NavigationItem, NavigationLinks,
-    ExhibitionTitle, SubTitle,CardHolder, ButtonHolder, LoadMoreButton, FirstCard, SecondCard, ThirdCard, FourthCard, FifthCard, SixthCard} from './Exhibition.elements';
+    ExhibitionTitle, SubTitle,CardHolder, ButtonHolder, LoadMoreButton, FirstCard, SecondCard, ThirdCard, FourthCard, FifthCard, SixthCard, RandomDiv} from './Exhibition.elements';
 import {Button} from '../GlobalStyle';
 import './HeaderElements.css';
 import Card from './Card';
@@ -203,6 +203,7 @@ const Exhibition = () => {
     const seeAllRef = useRef();
     return (
         <>
+        <RandomDiv>
             <ExhibitionSection>
                     <ExhibitionContainer>
                             <NavigationHolder>
@@ -273,6 +274,7 @@ const Exhibition = () => {
                             </ButtonHolder>
                     </ExhibitionContainer>
             </ExhibitionSection>
+        </RandomDiv>
             
         </>
     )
