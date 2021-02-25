@@ -3,38 +3,16 @@ import {Container,Button} from '../GlobalStyle';
 import './HeaderElements.css';
 import {FaClock} from 'react-icons/fa';
 
+export const RandomDiv = styled.div`
+
+`;
+
 export const EventSection = styled.section`
-height: 130vh;
-max-height: 150vh;
+
 background-color: #e3f88f;
-
-@media screen and (max-width: 1650px){
-    height: 143vh;
-max-height: 300vh;
-}
-
-@media screen and (max-width: 960px){
-    height: 275vh;
-max-height: 300vh;
-}
-
-@media screen and (max-width: 430px){
-    height: 285vh;
-max-height: 400vh;
-}
+padding-bottom: 50px;
 
 
-
-@media screen and (max-width: 385px){
-    height: 345vh;
-}
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) {
-        height: 385vh;
-
-    }
 `;
 
 

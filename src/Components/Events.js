@@ -1,6 +1,6 @@
 import React, {useRef,useEffect} from 'react';
 import {EventSection, EventContainer, VerticalCardHolder, VerticalCardContainer, VerticalCardDate,
-    VerticalCardMonth, VerticalCardDay,EventTitle,EventSubtitle,ReadMoreButton, CardOne, CardTwo, CardThree} from './Events.elements.js';
+    VerticalCardMonth, VerticalCardDay,EventTitle,EventSubtitle,ReadMoreButton, CardOne, CardTwo, CardThree, RandomDiv} from './Events.elements.js';
 import EventCard from './EventCard';
 import ColoredFace from '../Images/oneIn.jpg';
 import OilDrawing from '../Images/twoIn.jpg';
@@ -42,6 +42,7 @@ const Events = () => {
 
     return (
         <>
+        <RandomDiv>
             <EventSection ref={el => {TriggerAnimation = el}}>
                 <EventContainer>
                         <EventTitle nopaddingbot ref={el => {TitleAnimation = el}}>Upcoming</EventTitle>
@@ -63,7 +64,7 @@ const Events = () => {
                         <ReadMoreButton style={{fontFamily: 'duera' }} whitened standart noMargin hugeTopMargin ref={el => {ButtonAnimation = el}}>EXPLORE ALL</ReadMoreButton>         
                 </EventContainer>
             </EventSection>
-            
+         </RandomDiv>   
         </>
     )
 }
