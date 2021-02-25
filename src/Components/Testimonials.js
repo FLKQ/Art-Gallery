@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from 'react'
 import {TestimonialContainer, TestimonialHolder, TestimonialsTextHolder, TestimonialsTitle, TestimonialsSubtext, TestimonialsButton,
-     TestimonialsSection, RatingCardWrapper,RatingCardSpreader} from './Testimonials.elements';
+     TestimonialsSection, RatingCardWrapper,RatingCardSpreader, WrapperDiv} from './Testimonials.elements';
 import {BsStarFill, BsStar} from 'react-icons/bs';
 import RatingCard from './RatingCard';
 import PersonTwo from '../Images/PersonTwo.jpg';
@@ -50,6 +50,7 @@ const Testimonials = () => {
 
     return (
         <>
+        <WrapperDiv>
             <TestimonialsSection>
                 <TestimonialContainer>
                     <TestimonialHolder>
@@ -78,7 +79,8 @@ const Testimonials = () => {
             </RatingCardWrapper>    
                  
             </TestimonialsSection>
-             
+        </WrapperDiv> 
+            
         </>
     )
 }

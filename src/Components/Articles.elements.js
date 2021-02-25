@@ -1,37 +1,15 @@
 import styled from 'styled-components';
 import ArticlesMain from '../Images/ArticlesMain.jpg'
 
+export const ArtiWrapperDiv = styled.div`
+
+`;
 
 export const ArticlesSection = styled.section`
-height: 160vh; //160
+//160
 background-color: #fff;
 
-@media screen and (max-width:1650px){
- height: 180vh; //480
-    
-};
 
-@media screen and (max-width:960px){
- height: 480vh; //480
-    
-};
-
-@media screen and (max-width:430px){
- height: 500vh; //480
-    
-};
-
-@media screen and (max-width: 385px){
-    height: 600vh;
-  };
-
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) {
-        height: 700vh;
-
-    };
 `;
 
 export const ArticlesContainer = styled.div`

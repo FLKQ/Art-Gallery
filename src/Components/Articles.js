@@ -1,6 +1,6 @@
 import {React, useState, useEffect, useRef} from 'react'
 import {ArticlesSection, ArticlesImagesWrapper, ArticlesContainer,
-    ImageContainerCenterer, ArticlesTitle, GetTicketWrapper, ArticlesSubtext, NewsletterCardInput, ArticlesWrapper,ImageContainer,GetTicketButton} from './Articles.elements';
+    ImageContainerCenterer, ArticlesTitle, GetTicketWrapper, ArticlesSubtext, NewsletterCardInput, ArticlesWrapper,ImageContainer,GetTicketButton,ArtiWrapperDiv} from './Articles.elements';
 import ArticlesCard from './ArticlesCard';
 import ArticlesSideCard from './ArticlesSideCard';
 import GetTicket from './GetTicket';
@@ -82,6 +82,7 @@ window.addEventListener("resize", ChooseTicket)
 
     return (
         <>
+        <ArtiWrapperDiv>
             <ArticlesSection>
                 <ArticlesContainer>
                     <ArticlesWrapper>
@@ -103,6 +104,7 @@ window.addEventListener("resize", ChooseTicket)
                         {ShowTicket()}
                     </GetTicketWrapper>
             </ArticlesSection>
+       </ArtiWrapperDiv>
         </>
     )
 }

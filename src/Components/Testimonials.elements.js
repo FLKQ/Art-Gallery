@@ -2,35 +2,18 @@ import styled from 'styled-components';
 import {Container, Button} from '../GlobalStyle';
 import './HeaderElements.css';
 
+export const WrapperDiv = styled.div`
 
+`;
 
 export const TestimonialsSection = styled.section`
 color: black;
 background-color: #e3f88f;
-height: 100vh;
+
 //display: flex;
 //justify-content: center;
 
-@media screen and (max-width:960px){
-    height: 175vh;
-    
-};
 
-@media screen and (max-width:430px){
-    height: 240vh;
-    
-};
-
-@media screen and (max-width: 385px){
-    height: 280vh;
-}
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) {
-        height: 300vh;
-
-    }
 
 `;
 

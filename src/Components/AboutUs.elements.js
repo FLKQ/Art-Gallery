@@ -11,7 +11,7 @@ export const RndmDiv = styled.div`
 export const AboutUsSection = styled.section`
 
 background-color: #fff;
-padding-bottom: 120rem;
+padding-bottom: 125rem;
 
 
 `;
