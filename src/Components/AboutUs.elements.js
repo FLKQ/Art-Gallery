@@ -32,7 +32,7 @@ max-height: 1050vh;
 @media only screen 
     and (device-width: 375px) 
     and (device-height: 812px) {
-       height: 1015px;
+       height: 1015vh;
 
     }
 
