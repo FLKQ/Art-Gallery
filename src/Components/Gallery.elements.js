@@ -3,36 +3,15 @@ import {Container, Button} from '../GlobalStyle';
 import {Link} from 'react-router-dom';
 import './HeaderElements.css';
 
+export const RandomDiv = styled.div`
+
+`;
+
 export const GallerySection = styled.section`
-height: 155vh;
-max-height: 215vh;
+
 background-color: #121212;
 
-@media screen and (max-width:1639px){
-    height: 195vh;
-    max-height: 550vh;
-}
 
-@media screen and (max-width:960px){
-    height: 370vh;
-    max-height: 550vh;
-}
-
-@media screen and (max-width: 430px){
-    height: 390vh;
-    max-height: 600vh;
-}
-
-@media screen and (max-width: 385px){
-    height: 460vh;
-}
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) {
-        height: 540vh;
-
-    }
 `;
 
 export const GalleryContainer = styled(Container)`

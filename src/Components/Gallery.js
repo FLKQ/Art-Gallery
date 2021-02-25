@@ -1,6 +1,6 @@
 import React from 'react'
 import {GallerySection, GalleryContainer,
-    GalleryTitle, GallerySubTitle,CardHolder, ButtonHolder, ExploreMoreButton, GalleryImg} from './Gallery.elements';
+    GalleryTitle, GallerySubTitle,CardHolder, ButtonHolder, ExploreMoreButton, GalleryImg,RandomDiv} from './Gallery.elements';
 import {Button} from '../GlobalStyle';
 import './HeaderElements.css';
 import Face from '../Images/GalleryFirst.jpg';
@@ -77,6 +77,7 @@ const Gallery = () => {
 
     return (
         <>
+        <RandomDiv>
             <GallerySection>
                     <GalleryContainer>                        
                                 <GalleryTitle ref={el => {TitleAnimation = el}}>Explore Our Gallery</GalleryTitle>
@@ -107,7 +108,7 @@ const Gallery = () => {
                             </ButtonHolder>
                     </GalleryContainer>
             </GallerySection>
-            
+          </RandomDiv>  
         </>
     )
 }
