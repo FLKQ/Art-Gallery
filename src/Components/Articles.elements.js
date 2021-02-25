@@ -6,7 +6,7 @@ export const ArtiWrapperDiv = styled.div`
 `;
 
 export const ArticlesSection = styled.section`
-padding-bottom: 80px;
+padding-bottom: 100px;
 background-color: #fff;
 
 

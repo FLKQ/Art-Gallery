@@ -6,6 +6,7 @@ export const TicketContainer = styled.div`
 height: 60vh;
 display: flex;
 justify-content: center;
+padding-top: 20px;
 
 
 @media screen and (max-width:960px){
