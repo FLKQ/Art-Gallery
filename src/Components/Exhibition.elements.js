@@ -32,7 +32,7 @@ background-color: #fff;
 @media only screen 
     and (device-width: 375px) 
     and (device-height: 812px) {
-        height: 750vh;
+        height: 650vh;
 
     }
 
