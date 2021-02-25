@@ -6,6 +6,7 @@ export const CuratorsContainer = styled(Container)`
 height: 90vh;
 display:flex;
 justify-content: center;
+padding-top: 25px;
 
 
 `;
