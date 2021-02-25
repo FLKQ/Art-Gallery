@@ -16,6 +16,7 @@ const Navbar = () => {
      let LogoAnimation = useRef(null);
      let ButtonAnimation = useRef(null);
 
+
      useEffect(() => {
        
          gsap.fromTo(MenuAnimation, {y: -100, opacity: 0}, {y: 0, opacity: 1, duration: 1.5, ease: Power3.easeOut});
@@ -27,11 +28,73 @@ const Navbar = () => {
 
      }, []);
 
+
+     const CurrentWidth =  window.innerWidth;
     
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
     const handleclick = () => setClick(!click);
+
+
+     const ExhibitionScroll = () => {
+     if(CurrentWidth <= 960){
+        window.scrollTo({top: 850, behavior: "smooth"});
+    }else{
+        window.scrollTo({top: 900, behavior: "smooth"});
+    };
+}
+
+const EventsScroll = () => {
+    if(CurrentWidth <= 960){
+       window.scrollTo({top: 850, behavior: "smooth"});
+   }else{
+       window.scrollTo({top: 2950, behavior: "smooth"});
+   };
+}
+
+const GalleryScroll = () => {
+    if(CurrentWidth <= 960){
+       window.scrollTo({top: 850, behavior: "smooth"});
+   }else{
+       window.scrollTo({top: 4200, behavior: "smooth"});
+   };
+}
+
+const AboutScroll = () => {
+    if(CurrentWidth <= 960){
+       window.scrollTo({top: 850, behavior: "smooth"});
+   }else{
+       window.scrollTo({top: 5700, behavior: "smooth"});
+   };
+}
+const CuratorsScroll = () => {
+    if(CurrentWidth <= 960){
+       window.scrollTo({top: 850, behavior: "smooth"});
+   }else{
+       window.scrollTo({top: 8800, behavior: "smooth"});
+   };
+}
+
+const BlogScroll = () => {
+    if(CurrentWidth <= 960){
+       window.scrollTo({top: 850, behavior: "smooth"});
+   }else{
+       window.scrollTo({top: 10750, behavior: "smooth"});
+   };
+}
+
+const GoHomeScroll = () => {
+    if(CurrentWidth <= 960){
+       window.scrollTo({top: 0, behavior: "smooth"});
+   }else{
+       window.scrollTo({top: 0, behavior: "smooth"});
+   };
+}
+
+
+    
+
 
     return (
         <>
@@ -40,7 +103,7 @@ const Navbar = () => {
                 <Nav>
                     
                         <NavbarContainer>
-                            <NavLogo to="/" style={{alignItems: 'center'}} ref={el => {LogoAnimation = el}} >
+                            <NavLogo to="/" style={{alignItems: 'center'}} ref={el => {LogoAnimation = el}} onClick={() => {GoHomeScroll();}}>
                                 <NavIcon />
                                     GAL
                                 </NavLogo>
@@ -51,22 +114,22 @@ const Navbar = () => {
                                 </MobileIcon>
                                 <NavMenu onClick = {handleclick} click={click} ref={el => {MenuAnimation = el}}> 
                                     <NavItem>
-                                        <NavLinks to = '/'>Exhibition</NavLinks>
+                                        <NavLinks to = '/'onClick={() => {ExhibitionScroll();}}>Exhibition</NavLinks>
                                     </NavItem>                                                      
                                     <NavItem>
-                                        <NavLinks to = '/'>Events</NavLinks>
+                                        <NavLinks to = '/' onClick={() => {EventsScroll();}}>Events</NavLinks>
                                     </NavItem>                                                       
                                     <NavItem>
-                                        <NavLinks to = '/'>Gallery</NavLinks>
+                                        <NavLinks to = '/' onClick={() => {GalleryScroll();}}>Gallery</NavLinks>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLinks to = '/'>About</NavLinks>
+                                        <NavLinks to = '/' onClick={() => {AboutScroll();}}>About</NavLinks>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLinks to = '/'>Curators</NavLinks>
+                                        <NavLinks to = '/' onClick={() => {CuratorsScroll();}}>Curators</NavLinks>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLinks to = '/'>Blog</NavLinks>
+                                        <NavLinks to = '/' onClick={() => {BlogScroll();}}>Blog</NavLinks>
                                     </NavItem>      
                                 </NavMenu>
                                         <NavItemBtn>
