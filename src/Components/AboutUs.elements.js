@@ -29,6 +29,13 @@ max-height: 1050vh;
     height: 940vh;
 };
 
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+       height: 1015px;
+
+    }
+
 `;
 
 export const AboutUsContainer = styled(Container)`
@@ -214,6 +221,8 @@ justify-content: center;
  height: 120vh;
    
 }
+
+
 
 `;
 

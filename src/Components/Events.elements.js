@@ -28,6 +28,13 @@ max-height: 400vh;
 @media screen and (max-width: 385px){
     height: 345vh;
 }
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+        height: 385vh;
+
+    }
 `;
 
 

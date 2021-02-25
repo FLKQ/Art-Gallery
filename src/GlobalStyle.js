@@ -18,6 +18,16 @@ html,body
     margin: 0 ;
     padding: 0px;
     overflow-x: hidden; 
+    };
+    
+    @media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+    width: 100%;
+    margin: 0 ;
+    padding: 0px;
+    overflow-x: hidden; 
+
     }
 }
 

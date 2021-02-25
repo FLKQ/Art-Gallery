@@ -16,6 +16,8 @@ align-items: center;
 @media screen and (max-width: 430px){
     height: 97vh;
 }
+
+
 `;
 
 export const FooterContainer = styled.div`

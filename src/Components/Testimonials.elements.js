@@ -25,6 +25,13 @@ height: 100vh;
     height: 280vh;
 }
 
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+        height: 300vh;
+
+    }
+
 `;
 
 

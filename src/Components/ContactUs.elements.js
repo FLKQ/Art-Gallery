@@ -14,6 +14,13 @@ color: white;
 @media screen and (max-width: 430px){
     height: 187vh;
 }
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+        height: 202vh;
+
+    }
 `;
 
 export const ContactUsContainer = styled.div`

@@ -26,6 +26,13 @@ background-color: #121212;
 @media screen and (max-width: 385px){
     height: 460vh;
 }
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) {
+        height: 500vh;
+
+    }
 `;
 
 export const GalleryContainer = styled(Container)`
