@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import './HeaderElements.css';
 import {AboutUsSection, AboutUsContainer, AboutUsImageTextConnecter, AboutUsImageHolder, AboutUsImage, AboutUsColumnTextHolder, AboutUsTitle,
     AboutUsSubTitle, AboutUsButton, DigitsHolder, ColumnDigitsHolder,AboutUsTitleMid,AboutUsTitleBot,AboutUsSubTitleBot,RandomDiv,VideoPreviewHolder,
-    VideoPreview, VideoPlayButton, VideoPlayButtonIcon,VideoPlayButtonLink, AboutUsStatementHolder,AbousUsStatementCenterer
+    VideoPreview, VideoPlayButton, VideoPlayButtonIcon,VideoPlayButtonLink, AboutUsStatementHolder,AbousUsStatementCenterer,RndmDiv
 } from './AboutUs.elements.js';
 import ColumnDigits from './ColumnDigits';
 import Architecture from '../Images/videoPic.jpg';
@@ -65,7 +65,7 @@ const AboutUs = () => {
 
     return (
         <>
-        
+        <RndmDiv>
             <AboutUsSection>
                 <AboutUsContainer>
                     <AboutUsImageTextConnecter>
@@ -116,6 +116,7 @@ const AboutUs = () => {
                         </div>
                         <Curators/>
             </AboutUsSection>
+            </RndmDiv>
             
         </>
     )

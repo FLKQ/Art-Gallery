@@ -4,36 +4,15 @@ import {Container, Button} from '../GlobalStyle';
 import {FaPlay} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 
+export const RndmDiv = styled.div`
+
+`;
+
 export const AboutUsSection = styled.section`
-height: 415vh; //415
-max-height: 500vh;
+
 background-color: #fff;
+padding-bottom: 120rem;
 
-@media screen and (max-width:1650px){
-    height: 440vh; //415
-max-height: 850vh;
-};
-
-@media screen and (max-width:960px){
-    height: 800vh; //415
-max-height: 850vh;
-};
-
-@media screen and (max-width:430px){
-    height: 855vh; //415
-max-height: 1050vh;
-};
-
-@media screen and (max-width: 385px){
-    height: 940vh;
-};
-
-@media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) {
-       height: 1030vh;
-
-    }
 
 `;
 
