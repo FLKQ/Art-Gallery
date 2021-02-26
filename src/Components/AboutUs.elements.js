@@ -13,6 +13,11 @@ export const AboutUsSection = styled.section`
 background-color: #fff;
 padding-bottom: 125rem;
 
+@media screen and (min-width: 1000px){
+
+    padding-bottom: 10rem;
+};
+
 
 `;
 

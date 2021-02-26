@@ -9,7 +9,10 @@ export const WrapperDiv = styled.div`
 export const TestimonialsSection = styled.section`
 color: black;
 background-color: #e3f88f;
+@media screen and (min-width: 1000px){
 
+padding-bottom: 10rem;
+};
 //display: flex;
 //justify-content: center;
 
