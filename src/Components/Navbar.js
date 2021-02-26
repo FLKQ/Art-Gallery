@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const EventsScroll = () => {
     if(CurrentWidth <= 960){
-       window.scrollTo({top: 850, behavior: "smooth"});
+       window.scrollTo({top: 5800, behavior: "smooth"});
    }else{
        window.scrollTo({top: 2950, behavior: "smooth"});
    };
@@ -55,7 +55,7 @@ const EventsScroll = () => {
 
 const GalleryScroll = () => {
     if(CurrentWidth <= 960){
-       window.scrollTo({top: 850, behavior: "smooth"});
+       window.scrollTo({top: 8300, behavior: "smooth"});
    }else{
        window.scrollTo({top: 4200, behavior: "smooth"});
    };
@@ -63,14 +63,14 @@ const GalleryScroll = () => {
 
 const AboutScroll = () => {
     if(CurrentWidth <= 960){
-       window.scrollTo({top: 850, behavior: "smooth"});
+       window.scrollTo({top: 11800, behavior: "smooth"});
    }else{
        window.scrollTo({top: 5700, behavior: "smooth"});
    };
 }
 const CuratorsScroll = () => {
     if(CurrentWidth <= 960){
-       window.scrollTo({top: 850, behavior: "smooth"});
+       window.scrollTo({top: 16250, behavior: "smooth"});
    }else{
        window.scrollTo({top: 8800, behavior: "smooth"});
    };
@@ -78,7 +78,7 @@ const CuratorsScroll = () => {
 
 const BlogScroll = () => {
     if(CurrentWidth <= 960){
-       window.scrollTo({top: 850, behavior: "smooth"});
+       window.scrollTo({top: 21100, behavior: "smooth"});
    }else{
        window.scrollTo({top: 10750, behavior: "smooth"});
    };
