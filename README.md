@@ -1,4 +1,4 @@
-### <p align="center"> https://artgalleryflkq.netlify.app/ </p>
+### <p align="center"> artgalleryflkq.netlify.app </p>
 
 ## <p align="center">Art gallery layout made with <a href="https://reactjs.org/">React</a> and hosted at <a href="https://www.netlify.com/">Netlify</a> </p>
 
